@@ -20,6 +20,11 @@ app.SessionList = Backbone.Collection.extend({
     return base;
 
   },
+  parse: function(response, options) {
+    return _.filter(response, function(obj) {
+      return obj.Traffic > 0;
+    });
+  }
 });
 
 // Renders an individual Session.
