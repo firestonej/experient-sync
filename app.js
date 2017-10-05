@@ -59,11 +59,13 @@ app.preAuth = function (xhr) {
 var sessionList = new app.SessionList();
 
 app.buildParams = function() {
-  var d = new Date();
+  var n = new Date();
+  var pollDuration = 5;
+  var startTime = new Date(2016, 9, 26, n.getHours(), n.getMinutes() - pollDuration, n.getSeconds());
+  var endTime = new Date(2016, 9, 26, n.getHours(), n.getMinutes(), n.getSeconds());
 
-  var start = '2016-10-26T' + d.getHours() + ':' + (d.getMinutes() - 5) + ':00';
-
-  var end = '2016-10-26T' + d.getHours() + ':' + d.getMinutes() + ':00';
+  var start = startTime.toISOString();
+  var end = endTime.toISOString();
 
   var params = {
     IsAttendeeOnly: true,
@@ -71,19 +73,20 @@ app.buildParams = function() {
     IsNotEstimated: false,
     IsRegistered: false,
     IsVerified: false,
-    RangeStart: start,
-    RangeEnd: end,
   };
 
   console.log(params);
-  return params;
+  console.log($.param(params));
+  return $.param(params)
+    + '&RangeStart=' + start
+    + '&RangeEnd=' + end;
 }
 
 
 
 sessionList.fetch({
   beforeSend: app.preAuth,
-  data: $.param(app.buildParams())
+  data: app.buildParams()
 });
 
 var sessionView = new app.SessionView({ collection: sessionList });
