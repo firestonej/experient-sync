@@ -15,8 +15,8 @@
     <!-- Templates -->
     <script type="text/template" id="session-template">
         <li class="session">
-            <strong><%- Name %></strong> (<span><%- Traffic %></span> people attending)
-
+            <h5><%- metadata.Code %><%- metadata.Title %></h5>
+            <%-traffic.Code %> - <%- traffic.Traffic %> / <%- metadata.Capacity %>
         </li>
     </script>
     <script src="app.js" type="text/javascript"></script>

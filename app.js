@@ -1,94 +1,112 @@
 var app = {};
 
-// Session model
+// Session metadata model
 app.Session = Backbone.Model.extend({
   defaults: {
     Code: '',
+    Title: '',
+  },
+  idAttribute: 'Code',
+});
+
+app.Traffic = Backbone.Model.extend({
+  defaults: {
+    Code: '',
     Name: '',
-    ProductID: '',
     Traffic: 0,
   }
 });
 
-// Session collection
-app.SessionList = Backbone.Collection.extend({
-  model: app.Session,
-  url: function() {
-    var eventCode = 'EDU161';
-    var base = 'https://api.experienteventbit.com/api/event/' + eventCode + '/RptSessionPerformance';
+// Collection for number of people at each session.
 
-    return base;
-
-  },
+app.TrafficList = Backbone.Collection.extend({
+  model: app.Traffic,
+  url: '/data/traffic.json',
   parse: function(response, options) {
-    return _.filter(response, function(obj) {
+    return _.filter(response, function (obj) {
       return obj.Traffic > 0;
     });
-  }
+  },
 });
 
-// Renders an individual Session.
-app.SessionView = Backbone.View.extend({
+// Session metadata collection.
+app.SessionList = Backbone.Collection.extend({
+  initialize: function(models, options) {
+    // this.on("add change", this.updateMetadata);
+  },
+  model: app.Session,
+  url: '/data/sessions.json',
+  parse: function(response,options) {
+    return response;
+  },
+});
+
+
+// Renders the collection of sessions.
+var SessionView = Backbone.View.extend({
   el: '#sessions',
   template: _.template($('#session-template').html()),
+  initialize: function(options) {
+    this.traffic = options.traffic;
+    this.metadata = options.metadata;
+
+    this.listenTo(this.traffic, "reset", this.render);
+    this.listenTo(this.metadata, "reset", this.render);
+
+    this.metadata.fetch({reset:true});
+    this.traffic.fetch({reset:true});
+  },
 
   render: function() {
-    this.collection.each(function(model){
-      var sessTemplate = this.template(model.toJSON());
-      this.$el.append(sessTemplate);
+    console.log(this.metadata);
+
+    this.$el.html('');
+    this.traffic.each(function(model) {
+      var trafficData = model.toJSON();
+
+      var sessionData = {};
+
+      try {
+        sessionData = this.metadata.get(model.get("Code")).toJSON();
+      } catch (e) {
+        // console.log(e); // TypeError
+        console.log("Failed code: " + model.get("Code"));
+      }
+
+      var output = this.template({ traffic: trafficData, metadata: sessionData });
+      this.$el.append(output);
+
     }, this);
+
   },
 
-  renderItem: function(session) {
-    var sessionTemplate = this.template(session.toJSON());
-    this.$el.append(sessionTemplate);
-  },
+  //
+  // render: function() {
+  //   this.$el.html('');
+  //   this.collection.each(function(model){
+  //
+  //     var renderArray = model.toJSON();
+  //     var sessTemplate = this.template(renderArray);
+  //     this.$el.append(sessTemplate);
+  //   }, this);
+  // },
 
-  initialize: function() {
-    this.listenTo(this.collection,"add", this.renderItem);
-  },
+  //
+  // initialize: function() {
+  //   this.listenTo(this.collection,"add change", function() {
+  //     this.render();
+  //   } );
 
 });
 
-// Authentication. Needs to be replaced with a fresh X-AUTH-CLAIMS request function.
-app.preAuth = function (xhr) {
-  var claim = '';
-  xhr.setRequestHeader('X-AUTH-CLAIMS', claim);
-}
+var sessionMetadata = new app.SessionList();
 
-var sessionList = new app.SessionList();
+var trafficList = new app.TrafficList();
 
-app.buildParams = function() {
-  var n = new Date();
-  var pollDuration = 5;
-  var startTime = new Date(2016, 9, 26, n.getHours(), n.getMinutes() - pollDuration, n.getSeconds());
-  var endTime = new Date(2016, 9, 26, n.getHours(), n.getMinutes(), n.getSeconds());
+var sessionView = new SessionView({ traffic: trafficList, metadata: sessionMetadata });
 
-  var start = startTime.toISOString();
-  var end = endTime.toISOString();
+setInterval(function() {
+  trafficList.fetch();
+  sessionMetadata.fetch();
 
-  var params = {
-    IsAttendeeOnly: true,
-    IsNotBoothPersonnel: true,
-    IsNotEstimated: false,
-    IsRegistered: false,
-    IsVerified: false,
-  };
-
-  console.log(params);
-  console.log($.param(params));
-  return $.param(params)
-    + '&RangeStart=' + start
-    + '&RangeEnd=' + end;
-}
-
-
-
-sessionList.fetch({
-  beforeSend: app.preAuth,
-  data: app.buildParams()
-});
-
-var sessionView = new app.SessionView({ collection: sessionList });
-
-sessionView.render();
+}, 1000);
