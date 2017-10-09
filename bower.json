@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "latest",
     "backbone": "latest",
-    "underscore": "latest"
+    "underscore": "latest",
+    "handlebars": "^4.0.10"
   }
 }

@@ -45,7 +45,7 @@ app.SessionList = Backbone.Collection.extend({
 // Renders the collection of sessions.
 var SessionView = Backbone.View.extend({
   el: '#sessions',
-  template: _.template($('#session-template').html()),
+  template: Handlebars.compile($('#session-template').html()),
   initialize: function(options) {
     this.traffic = options.traffic;
     this.metadata = options.metadata;

@@ -5,6 +5,8 @@
         <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
         <script src="bower_components/underscore/underscore.js" type="text/javascript"></script>
         <script src="bower_components/backbone/backbone.js" type="text/javascript"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+        <script src="bower_components/handlebars/handlebars.js" type="text/javascript"></script>
 
     </head>
 
@@ -13,11 +15,14 @@
     </ul>
 
     <!-- Templates -->
-    <script type="text/template" id="session-template">
+    <script id="session-template" type="text/x-handlebars-template">
         <li class="session">
-            <h5><%- metadata.Code %><%- metadata.Title %></h5>
-            <%-traffic.Code %> - <%- traffic.Traffic %> / <%- metadata.Capacity %>
+            <h5>{{metadata.Code}}</h5>
+            <div class="body">
+                {{traffic.Code}} - {{ traffic.Traffic }} / {{ metadata.Capacity }}
+            </div>
         </li>
     </script>
+
     <script src="app.js" type="text/javascript"></script>
 </html>
