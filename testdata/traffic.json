@@ -1,0 +1,2557 @@
+[
+  {
+    "AvgDwellTimeSS": 2678,
+    "Code": "SESS048",
+    "Name": "Leading Change: Building Toward a Strategic Vision of Innovation",
+    "ProductID": 5014,
+    "Traffic": 123
+  },
+  {
+    "AvgDwellTimeSS": 2839,
+    "Code": "FS05",
+    "Name": "Creating a Culture of Cybersecurity",
+    "ProductID": 5034,
+    "Traffic": 65
+  },
+  {
+    "AvgDwellTimeSS": 2703,
+    "Code": "SESS043",
+    "Name": "The Flipped Learning Academy: Preparing Faculty to Create Flipped College Courses",
+    "ProductID": 5113,
+    "Traffic": 39
+  },
+  {
+    "AvgDwellTimeSS": 2706,
+    "Code": "SESS046",
+    "Name": "Virtual Labs, BYOD, Online Classes: How Does IT Deliver Academic Apps, Anytime, Anywhere?",
+    "ProductID": 5082,
+    "Traffic": 37
+  },
+  {
+    "AvgDwellTimeSS": 2698,
+    "Code": "SESS044",
+    "Name": "Coding, Gaming, IoT, and Wearables: New Student Success Technologies, or Chocolate-Covered Broccoli?",
+    "ProductID": 5071,
+    "Traffic": 37
+  },
+  {
+    "AvgDwellTimeSS": 2716,
+    "Code": "SESS124",
+    "Name": "Analytics and Student Success: Research and Benchmarking",
+    "ProductID": 5259,
+    "Traffic": 31
+  },
+  {
+    "AvgDwellTimeSS": 2734,
+    "Code": "SESS125",
+    "Name": "Increasing Student Success through Adaptive Learning Environments",
+    "ProductID": 5024,
+    "Traffic": 31
+  },
+  {
+    "AvgDwellTimeSS": 2530,
+    "Code": "SESS049",
+    "Name": "Using Splunk Data Analytics to Protect Students, Faculty, and the University",
+    "ProductID": 5102,
+    "Traffic": 30
+  },
+  {
+    "AvgDwellTimeSS": 2687,
+    "Code": "SESS051",
+    "Name": "Boost Your Students' Engagement: Six Ways to Enhance Online Learning Experiences",
+    "ProductID": 5124,
+    "Traffic": 29
+  },
+  {
+    "AvgDwellTimeSS": 2596,
+    "Code": "CORP19",
+    "Name": "Beyond Students: The Next Wave of Identity Management Challenges Facing Higher Ed",
+    "ProductID": 5237,
+    "Traffic": 28
+  },
+  {
+    "AvgDwellTimeSS": 2908,
+    "Code": "DISC37",
+    "Name": "Cloud Computing",
+    "ProductID": 5183,
+    "Traffic": 26
+  },
+  {
+    "AvgDwellTimeSS": 2793,
+    "Code": "SESS076",
+    "Name": "A Bite-Sized Strategy with MESAs: Targeted Strategic Roadmaps Anywhere in Your Organization",
+    "ProductID": 5248,
+    "Traffic": 23
+  },
+  {
+    "AvgDwellTimeSS": 2852,
+    "Code": "SESS047",
+    "Name": "A Year of Cyberinfrastructure: Faculty Engagement Driving Research IT",
+    "ProductID": 5205,
+    "Traffic": 23
+  },
+  {
+    "AvgDwellTimeSS": 2922,
+    "Code": "SESS045",
+    "Name": "Deploying Open Learning Analytics at National Scale: Lessons from the Real World",
+    "ProductID": 4993,
+    "Traffic": 21
+  },
+  {
+    "AvgDwellTimeSS": 2701,
+    "Code": "DISC34",
+    "Name": "Administrative Systems Management",
+    "ProductID": 5054,
+    "Traffic": 18
+  },
+  {
+    "AvgDwellTimeSS": 2805,
+    "Code": "CORP44",
+    "Name": "Effective Threat Detection: The Key to Constraining Our Attackers",
+    "ProductID": 5147,
+    "Traffic": 16
+  },
+  {
+    "AvgDwellTimeSS": 2826,
+    "Code": "CORP13",
+    "Name": "It's a Matter of Principles: Designing for Next-Generation Learning",
+    "ProductID": 5135,
+    "Traffic": 15
+  },
+  {
+    "AvgDwellTimeSS": 2943,
+    "Code": "DISC05",
+    "Name": "Internal Market Economics: Effective Strategy-Driven Resource-Governance Processes That Align IT with Business Needs",
+    "ProductID": 5093,
+    "Traffic": 15
+  },
+  {
+    "AvgDwellTimeSS": 2705,
+    "Code": "SESS050",
+    "Name": "A Little Empathy Goes a Long Way: How User Research Is Changing UC's Admissions Application",
+    "ProductID": 5004,
+    "Traffic": 14
+  },
+  {
+    "AvgDwellTimeSS": 2697,
+    "Code": "DISC38",
+    "Name": "Fostering a Community of Collaboration through the Use of Technology and Space",
+    "ProductID": 5172,
+    "Traffic": 13
+  },
+  {
+    "AvgDwellTimeSS": 2636,
+    "Code": "CORP45",
+    "Name": "Transforming Teaching, Learning, and Research: Strategies for a Mobile-Ready Campus",
+    "ProductID": 5227,
+    "Traffic": 13
+  },
+  {
+    "AvgDwellTimeSS": 2693,
+    "Code": "SESS042",
+    "Name": "An Institutional Assessment and Decision-Making Model for Cloud-Based Educational Technologies",
+    "ProductID": 5157,
+    "Traffic": 12
+  },
+  {
+    "AvgDwellTimeSS": 2904,
+    "Code": "CORP23",
+    "Name": "Finding Your Edtech Soulmate: Matchmaking Tips from Instructional Technology",
+    "ProductID": 5216,
+    "Traffic": 12
+  },
+  {
+    "AvgDwellTimeSS": 2604,
+    "Code": "SESS126",
+    "Name": "Mentor Mapping: Creating a Community to Build the Profession",
+    "ProductID": 5270,
+    "Traffic": 8
+  },
+  {
+    "AvgDwellTimeSS": 1300,
+    "Code": "DISC36",
+    "Name": "DISC36-TBD",
+    "ProductID": 5194,
+    "Traffic": 1
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS016",
+    "Name": "Cloud-Adoption Strategies: Using the Cloud to Enable the Future University",
+    "ProductID": 4998,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP47",
+    "Name": "Data-Driven Decisions with a Click of the Button",
+    "ProductID": 5170,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS029",
+    "Name": "Managing Today's Cybersecurity Model: Balancing Risk and Reward",
+    "ProductID": 4999,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM06F",
+    "Name": "SEM06F - WAITLIST",
+    "ProductID": 2660,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC42",
+    "Name": "Mobile Technologies Constituent Group",
+    "ProductID": 5184,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS132",
+    "Name": "Envisioning the National Postsecondary Education Data Infrastructure in the 21st Century: Student Success and IT Themes",
+    "ProductID": 5021,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP27",
+    "Name": "Building Blocks of CBE: Backward Design, Authentic Assessment, Credentials, and Evidence-Based Learning",
+    "ProductID": 5221,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS065",
+    "Name": "Founding a Data Democracy: How Ivy Tech is Leading a Revolution in Higher Education",
+    "ProductID": 5051,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC39",
+    "Name": "IT Strategic Planning",
+    "ProductID": 5249,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC21",
+    "Name": "DISC21-TBD",
+    "ProductID": 5177,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM10A",
+    "Name": "SEM10A-Understanding Your Customers' Experience: Journey Mapping and Data Collection - WAITLIST",
+    "ProductID": 2621,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS007",
+    "Name": "Communications Toolkit Workshop: A Hands-On Guide to Creating Meaningful Messages That Support Your IT Change",
+    "ProductID": 5198,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS128",
+    "Name": "What the Internet Is Doing to Us - Sponsored by Moran Technology Consulting, Gold Partner",
+    "ProductID": 5005,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM07A",
+    "Name": "SEM07A-Developing a Roadmap for a Campus-Wide Office 365 SharePoint Implementation",
+    "ProductID": 2593,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM03F",
+    "Name": "SEM03F-Enhance Your University's Change Management Capability Using the Prosci ADKAR Model - WAITLIST",
+    "ProductID": 2643,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "BRK01",
+    "Name": "Seminar Refreshments",
+    "ProductID": 5059,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS100",
+    "Name": "New Models for IT Strategic Planning: A Report from the ECAR Working Group",
+    "ProductID": 5073,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP08",
+    "Name": "Moving Toward a Unified Campus-Wide Solution",
+    "ProductID": 5234,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS018",
+    "Name": "Rethinking IT: From Service Provider to Strategic Partner",
+    "ProductID": 5018,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS138",
+    "Name": "Better Decision Making: Data You Can Use to Inform Your Cloud Strategy",
+    "ProductID": 5261,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS035",
+    "Name": "Learning at Scale with Analytics: Findings from the Field and Open Questions",
+    "ProductID": 5067,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM10P",
+    "Name": "SEM10P-Active Teaching and Learning Spaces: Design, Technology, Outcomes, and Support",
+    "ProductID": 2587,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC51",
+    "Name": "Sustainable IT",
+    "ProductID": 5192,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM05P",
+    "Name": "SEM05P-Cloud 101: Tools and Strategies for Evaluating Cloud Services - WAITLIST",
+    "ProductID": 2624,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC55",
+    "Name": "Google Apps",
+    "ProductID": 5247,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM06P",
+    "Name": "SEM06P-Conducting IT Process Improvements - WAITLIST",
+    "ProductID": 2649,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC24",
+    "Name": "Open Badges Update and the IMS Global Open Badges Extensions in Education Project",
+    "ProductID": 5200,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS022",
+    "Name": "Campus Computing 2016: The National Survey of E-Learning and Information Technology in American Higher Education",
+    "ProductID": 5066,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS104",
+    "Name": "The California Community Colleges' Online Education Initiative: Rethinking Online Education at Scale",
+    "ProductID": 5262,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS057",
+    "Name": "Four Cornerstones to Transforming an IT Organization to Meet Current and Future Challenges",
+    "ProductID": 5260,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS067",
+    "Name": "Filling the IT Leadership Pipeline: What's on Tap?",
+    "ProductID": 5068,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC67",
+    "Name": "Instructional Technologies",
+    "ProductID": 5138,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC14",
+    "Name": "Diversity in IT",
+    "ProductID": 5187,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM12A",
+    "Name": "SEM12A",
+    "ProductID": 2647,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS004",
+    "Name": "A Comprehensive Approach to Student Success Using Analytics",
+    "ProductID": 5007,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS108",
+    "Name": "IT Executive Skills, Background, and Education Requirements: What the Leadership Team Thinks and What the Data Reveals",
+    "ProductID": 4996,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS118",
+    "Name": "The Design Thinking Process: Edtech Adoption in Postsecondary Education",
+    "ProductID": 5008,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM08A",
+    "Name": "SEM08A-Building Blocks for an Effective Information Security Strategy - WAITLIST",
+    "ProductID": 2655,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC41",
+    "Name": "Openness",
+    "ProductID": 5195,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS033",
+    "Name": "Making WHOOPPEE: A Collaborative Approach to Creating a Modern Peer-Assessment System",
+    "ProductID": 5244,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM01P",
+    "Name": "SEM01P-Save Time and Resources: Using Disruptive Technologies in Higher Education",
+    "ProductID": 2585,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS082",
+    "Name": "Driving Collaborative Accessibility Improvements in Edtech Products",
+    "ProductID": 5013,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "GS02",
+    "Name": "The Future of Learning",
+    "ProductID": 2662,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS122",
+    "Name": "Finding the Answers: How to Complete an Establishment Survey",
+    "ProductID": 5255,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC62",
+    "Name": "Data Governance and Chief Data Officers",
+    "ProductID": 5218,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM04F",
+    "Name": "SEM04F-ITANA Face2Face 2016 | Influence and Leadership Skills for Architects: Driving Strategic Decisions",
+    "ProductID": 2628,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM13P",
+    "Name": "SEM13P - Benchmarking Information Security",
+    "ProductID": 2594,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC09",
+    "Name": "CIO Roundtable: Lessons Learned in Increasing Inclusivity and Diversity",
+    "ProductID": 5092,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS094",
+    "Name": "The OSCQR Rubric: Built by SUNY for SUNY, Open to the World",
+    "ProductID": 5174,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP07",
+    "Name": "Balancing Security and Access: Pivotal to a Better Educational Experience ",
+    "ProductID": 5226,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS017",
+    "Name": "Adaptive Vendor Management Strategies",
+    "ProductID": 5065,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP39",
+    "Name": "Initiative Impact Analysis to Prioritize Action and Resource Allocation",
+    "ProductID": 5209,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM12P",
+    "Name": "SEM12P - How IT Can Enhance Institutional Success, Again and Again",
+    "ProductID": 2586,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC08",
+    "Name": "Student Success Is Everybody's Business",
+    "ProductID": 5091,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM09A",
+    "Name": "SEM09A-Adaptive Learning Systems: Evaluating and Implementing the Right One (for You) - WAITLIST",
+    "ProductID": 2640,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS147",
+    "Name": "\"Under the Ed Radar\": An Edtech Business Pitch Competition Finalists - Sponsored by Penn State Edtech Network",
+    "ProductID": 5045,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC15",
+    "Name": "Virtual Worlds",
+    "ProductID": 5176,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC57",
+    "Name": "DISC57-TBD",
+    "ProductID": 5182,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC54",
+    "Name": "Network Management",
+    "ProductID": 5053,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP28",
+    "Name": "Accelerating Employability for Adult Learners through Innovative Online Learning Partnerships",
+    "ProductID": 5129,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS005",
+    "Name": "Cloud Contracts: Reading, Writing, and Interpreting to Unravel the Mystery",
+    "ProductID": 5252,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "GS03",
+    "Name": "Because I Said I Would",
+    "ProductID": 5039,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS151",
+    "Name": "The Higher Education Cyberpractitioner: Community Building and Next Steps",
+    "ProductID": 5208,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM07P",
+    "Name": "SEM07P-User Experience Is for Everyone: Identify Users' Needs to Create Better Product and Service Experiences - WAITLIST",
+    "ProductID": 2612,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS107",
+    "Name": "Goodbye, Data Center: Choosing the Right Services to Migrate to the Cloud",
+    "ProductID": 5116,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM03A",
+    "Name": "SEM03A-Negotiation Skills and Strategies for IT Leaders - WAITLIST",
+    "ProductID": 2658,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS008",
+    "Name": "Designing and Optimizing Client Service Models: Centralized, Federated, and Points in Between",
+    "ProductID": 5075,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS090",
+    "Name": "Increasing First-Year Retention through Design Thinking",
+    "ProductID": 5156,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS109",
+    "Name": "Centrally Led, Widely Dispersed: Creating an Identity and Approach for a Unified IT Organization That Propels the Mission",
+    "ProductID": 5074,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC17",
+    "Name": "Project Management",
+    "ProductID": 5263,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM06A",
+    "Name": "SEM06A-Balanced Leadership: The Role of Behavior Styles and Emotional Intelligence",
+    "ProductID": 2600,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS013",
+    "Name": "The Three-Legged Race: A Model for Rapid Integration of Learning Technologies into Course Assignments",
+    "ProductID": 5048,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC60",
+    "Name": "IT Metrics",
+    "ProductID": 5185,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM08P",
+    "Name": "SEM08P-Building Your Dream Team",
+    "ProductID": 2648,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC19",
+    "Name": "Learning Space Design",
+    "ProductID": 5181,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS087",
+    "Name": "Merge Ahead: Library-IT Organizations in the Liberal Arts",
+    "ProductID": 5081,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS119",
+    "Name": "Following, Connecting, Friending: Finding Your Peers",
+    "ProductID": 5254,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG35",
+    "Name": "EDUCAUSE 2017 Membership Overview",
+    "ProductID": 5161,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS136",
+    "Name": "Trust through Transparency: Communicating the Value of IT",
+    "ProductID": 5258,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS106",
+    "Name": "Culture Shift: How DevOps Changed the Way We Think About IT",
+    "ProductID": 5105,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS001",
+    "Name": "Innovative Active Classroom Designs to Solve Challenges and Target Specific Learning Pedagogies",
+    "ProductID": 4986,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG53",
+    "Name": "Kuali Open Meeting for CIOs and Senior IT Leaders ",
+    "ProductID": 5087,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SDS",
+    "Name": "Senior Directors Seminar",
+    "ProductID": 2583,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DSK09",
+    "Name": "Speaker Ready Room Open",
+    "ProductID": 5058,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS052",
+    "Name": "Supercharging Your Technology Literacy and Training",
+    "ProductID": 4994,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS086",
+    "Name": "The Challenges and Benefits of Cloud-Based ERP for Smaller Institutions",
+    "ProductID": 5101,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM08F",
+    "Name": "SEM08F - WAITLIST",
+    "ProductID": 2601,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP14",
+    "Name": "Forging New Pathways for Student Success",
+    "ProductID": 5224,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM03P",
+    "Name": "SEM03P-Preparing for That IT Strategic Planning Project: A Data-Driven Approach",
+    "ProductID": 2603,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS059",
+    "Name": "ADA Compliance for Course Design: Lessons Learned from Campuses and an Online Publisher",
+    "ProductID": 5114,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM06P",
+    "Name": "SEM06P-Conducting IT Process Improvements",
+    "ProductID": 2609,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP25",
+    "Name": "Executive Panel: Building a Technology Platform to Empower Students, Faculty, and Staff",
+    "ProductID": 5235,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS150",
+    "Name": "Redesigning the Experience of Learning with Cognitive Computing: Rapid Design Ideation Session",
+    "ProductID": 5046,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP31",
+    "Name": "Leveraging Mobility to Increase Student Performance, Engagement, and Retention ",
+    "ProductID": 5233,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS081",
+    "Name": "Catalyzing Academic Innovation with New Spaces and Services",
+    "ProductID": 5070,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM07F",
+    "Name": "SEM07F - WAITLIST",
+    "ProductID": 2653,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS105",
+    "Name": "Limited Resources, Limited Staff? No Problem: Analytics for the Rest of Us",
+    "ProductID": 5150,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS058",
+    "Name": "Achieving Success for Technology Refresh Investment through Shared Governance",
+    "ProductID": 5055,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS079",
+    "Name": "Game On! IT Engagement with New Students during Orientation",
+    "ProductID": 5052,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DGOIFCON",
+    "Name": "Diana G. Oblinger Innovation Forum Workshop: How to Develop Your Institution's Student Success Strategy",
+    "ProductID": 2627,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS026",
+    "Name": "Beyond Portals: A Next-Generation, Action-Oriented Service Delivery Platform for Rich Campus Applications",
+    "ProductID": 5108,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP34",
+    "Name": "Unlock Your Campus Data, Empower Users, and Provide Valuable Content",
+    "ProductID": 5210,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS148",
+    "Name": "Dreamit and Penn State: A New Model for Engaging with Edtech Start-Ups",
+    "ProductID": 5042,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM09P",
+    "Name": "SEM09P-Game On: Making Smart Strategic Decisions When Creating a Video Game in Academia",
+    "ProductID": 2596,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP01",
+    "Name": "Transforming Education through Innovation with Oracle Cloud Services",
+    "ProductID": 5238,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS135",
+    "Name": "CSMT (Customer Service Mentality Training)",
+    "ProductID": 4991,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC49",
+    "Name": "Blended and Online Learning",
+    "ProductID": 5246,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG36",
+    "Name": "EDUCAUSE 2017 Membership Overview",
+    "ProductID": 5162,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS041",
+    "Name": "Building Cloud-Connected 3D Printing Labs That Transform Learning and Engage Students",
+    "ProductID": 5078,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC01",
+    "Name": "Leading Transformation within Higher Education during a Period of Major Disruption",
+    "ProductID": 5088,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS037",
+    "Name": "\"We're Moving Your Cheese!\": Communicating IT Change",
+    "ProductID": 5120,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS152",
+    "Name": "Strategic Accessibility Update",
+    "ProductID": 4995,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM04P",
+    "Name": "SEM04P-Conceptual Frameworks for Teaching with Technology: Media Theory and Classroom Practice",
+    "ProductID": 2599,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS140",
+    "Name": "Increasing the Diversity, Equity, and Inclusiveness of Your Recruitments",
+    "ProductID": 5126,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP02",
+    "Name": "IBM Watson: Building a World-Class Ecosystem for Higher Education",
+    "ProductID": 5213,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP22",
+    "Name": "Your Data Is an Institutional Asset: ECM's Role in the Information Management Age",
+    "ProductID": 5231,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "TIXLUNTH",
+    "Name": "Thursday Lunch",
+    "ProductID": 2582,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM04A",
+    "Name": "SEM04A-The New Leadership Challenge - WAITLIST",
+    "ProductID": 2644,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS141",
+    "Name": "Opening Pandora's Box: Understanding and Implementing IT Governance and Risk Management Programs",
+    "ProductID": 5025,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC68",
+    "Name": "DISC68-TBD",
+    "ProductID": 5219,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS054",
+    "Name": "Blending with MOOCs: How Multiple Institutions Are Using MOOCs to Improve Residential Education",
+    "ProductID": 5072,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS078",
+    "Name": "Designing IT Guidelines for Global Programs",
+    "ProductID": 5100,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC50",
+    "Name": "ITANA",
+    "ProductID": 5173,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG40",
+    "Name": "Senior Directors Seminar - Sponsored by Workday, Platinum Partner",
+    "ProductID": 5282,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS020",
+    "Name": "Duo: How Will You Do It?",
+    "ProductID": 5107,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM07F",
+    "Name": "SEM07F",
+    "ProductID": 2623,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "GS03",
+    "Name": "Because I Said I Would",
+    "ProductID": 2663,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC66",
+    "Name": "Student Affairs IT",
+    "ProductID": 5175,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC10",
+    "Name": "Alternative Credentialing in Higher Education",
+    "ProductID": 5159,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS080",
+    "Name": "Developing a Mobile App to Track Student Engagement in High-Impact Practices",
+    "ProductID": 5111,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS07",
+    "Name": "A See of Change: Connecting IT and Student Affairs to Visualize a Richer Narrative for Institutional Planning and Accountability ",
+    "ProductID": 5030,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP40",
+    "Name": "An Integrated Approach to Planning and Advising for Student Success",
+    "ProductID": 5214,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP42",
+    "Name": "Elevating Campus Engagement and Reputation through the Power of Crowdsourcing",
+    "ProductID": 5133,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM04P",
+    "Name": "SEM04P-Conceptual Frameworks for Teaching with Technology: Media Theory and Classroom Practice - WAITLIST",
+    "ProductID": 2639,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS034",
+    "Name": "Higher Education, IT, and Public Policy",
+    "ProductID": 5001,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC30",
+    "Name": "Business Schools and Business Colleges IT Leaders  ",
+    "ProductID": 5201,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS143",
+    "Name": "So You Wanna Be a CISO? Understanding the Skills, Pathways, and Professional Development to Get You There",
+    "ProductID": 5123,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG47",
+    "Name": "Senior Directors Seminar Breakfast - Sponsored by Workday, Platinum Partner",
+    "ProductID": 5284,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC28",
+    "Name": "IT Communications",
+    "ProductID": 5130,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC52",
+    "Name": "DISC52-TBD",
+    "ProductID": 5196,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM03F",
+    "Name": "SEM03F-Enhance Your University's Change Management Capability Using the Prosci ADKAR Model",
+    "ProductID": 2618,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS036",
+    "Name": "Coalition for Networked Information (CNI) Community Update",
+    "ProductID": 5050,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSDS",
+    "Name": "Senior Directors Seminar - WAITLIST",
+    "ProductID": 2597,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS027",
+    "Name": "IT's Easy: Creating an Engaging IT Organization",
+    "ProductID": 5265,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS031",
+    "Name": "Bridging OER's Last Mile Divide: Can Intelligent Curation Help Level the Playing Field for Students and Make Low-Cost Resources Available to Faculty?",
+    "ProductID": 5010,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS11",
+    "Name": "Leveraging External Resources to Deliver Technology for the Design of Strategic Initiatives",
+    "ProductID": 5036,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS030",
+    "Name": "Voice of the Student: A Unique Application for Student Feedback",
+    "ProductID": 5049,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM06F",
+    "Name": "SEM06F",
+    "ProductID": 2635,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS039",
+    "Name": "Hydra: One Body, Many Heads for Digital Repositories",
+    "ProductID": 5266,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS071",
+    "Name": "Bringing Adaptive Technology in the Classroom to Larger Scale through Academic Collaboration",
+    "ProductID": 5080,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP33",
+    "Name": "Higher Education in the Cloud: Real Value vs. Blue-Sky Thinking ",
+    "ProductID": 5144,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS153",
+    "Name": "Four Futures of the LMS Market",
+    "ProductID": 5268,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS025",
+    "Name": "Measuring Student Engagement Using Data Analytics",
+    "ProductID": 5009,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS097",
+    "Name": "Doing SharePoint Wrong Has Never Been So Right",
+    "ProductID": 5239,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS012",
+    "Name": "Fostering OER Adoption at Your Institution: Key Challenges and Proven Solutions",
+    "ProductID": 5152,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC16",
+    "Name": "[ITACCESS] ?IT Accessibility ?Constituent G?roup",
+    "ProductID": 5165,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS021",
+    "Name": "360 Degrees of Learning: Technology and Active Learning",
+    "ProductID": 5264,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS009",
+    "Name": "It Takes a Village: Curating Local Digital Content",
+    "ProductID": 5241,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS024",
+    "Name": "Rethinking the Makerspace",
+    "ProductID": 5153,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS073",
+    "Name": "Leveraging Big Data, Information, and Predictive Analytics to Improve Academic and Administrative Operations",
+    "ProductID": 5002,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS093",
+    "Name": "Demystifying the Collaborative Classroom and Hotspot",
+    "ProductID": 5115,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC45",
+    "Name": "DISC45-TBD",
+    "ProductID": 5245,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP26",
+    "Name": "What Does a Highbred CISO's Playbook Look Like?",
+    "ProductID": 5145,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP21",
+    "Name": "CORP21- Lenovo, Silver Partner",
+    "ProductID": 5225,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP03",
+    "Name": "Getting Started with Watson: Initiatives to Impact the Student Experience",
+    "ProductID": 5166,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS130",
+    "Name": "Student and Faculty Technology Experiences: Research and Benchmarking",
+    "ProductID": 5011,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS110",
+    "Name": "Improving Scholarly Impact Metrics",
+    "ProductID": 5057,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC48",
+    "Name": "DISC48-TBD",
+    "ProductID": 5169,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS066",
+    "Name": "Moving to Cloud-Enabled Disaster Recovery",
+    "ProductID": 5154,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM02A",
+    "Name": "SEM02A-moving to the Cloud with Amazon Web Services - WAITLIST",
+    "ProductID": 2598,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS098",
+    "Name": "Falling Skies: Supporting Collaboration on UC Campuses in a \"Bring Your Own Everything\" World ",
+    "ProductID": 5084,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS010",
+    "Name": "Game of Pwns: Establishing Cyber Risk Governance",
+    "ProductID": 5106,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS111",
+    "Name": "Protecting Your City of Data through Divesting and Reinvesting",
+    "ProductID": 5085,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP35",
+    "Name": "Student Success: Lessons Learned on Campus",
+    "ProductID": 5146,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM09P",
+    "Name": "SEM09P-Game On: Making Smart Strategic Decisions When Creating a Video Game in Academia - WAITLIST",
+    "ProductID": 2657,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP38",
+    "Name": "The Impact of Collaborative Tools: Lessons from Universities Using Google Apps for Education",
+    "ProductID": 5132,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS114",
+    "Name": "Improving College Completion through Collaboration and Scale",
+    "ProductID": 5273,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP12",
+    "Name": "Your Students' Digital Experience: The Good, the Bad, and the Ugly",
+    "ProductID": 5148,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS095",
+    "Name": "Advancing a Data-Driven Culture Through Collaborative Partnerships",
+    "ProductID": 5250,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP30",
+    "Name": "How to Capitalize on the Nontraditional Market",
+    "ProductID": 5000,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP43",
+    "Name": "What Do Today's Students Really Need to Succeed in the Future? ",
+    "ProductID": 5212,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS08",
+    "Name": "Beyond Diversity: Perspectives on Leadership, Culture, and Innovation ",
+    "ProductID": 5031,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS101",
+    "Name": "Increase Student Success with a Transformed Class Schedule",
+    "ProductID": 5207,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS006",
+    "Name": "Shared Resources in the Cloud: Leveraging Local Networks to Build Infrastructure, Services, and Community",
+    "ProductID": 5064,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC29",
+    "Name": "Professional Development/Staff Management",
+    "ProductID": 5098,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM01F",
+    "Name": "SEM01F-Building Successful IT Governance, Portfolio, and Project Management Processes",
+    "ProductID": 2590,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS133",
+    "Name": "Seeking Evidence of Impact: Methodologies in Teaching and Learning",
+    "ProductID": 5012,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG38",
+    "Name": "Membership: Ask an EDUCAUSE Staffer",
+    "ProductID": 5164,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS083",
+    "Name": "Rethinking Academic Technology for 21st-Century Teaching and Learning",
+    "ProductID": 5003,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG37",
+    "Name": "Membership: Ask an EDUCAUSE Staffer",
+    "ProductID": 5163,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS145",
+    "Name": "Living in Harmony: Technology and Academic Objectives ",
+    "ProductID": 5040,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "TIXLUNW",
+    "Name": "Wednesday Lunch",
+    "ProductID": 2581,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS146",
+    "Name": "\"Pitch IT! Challenge\": Your Voice, Our Stage, Community-Based Solutions - Sponsored by USA Funds",
+    "ProductID": 5043,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS084",
+    "Name": "Developing and Utilizing Predictive Analytics to Drive Change",
+    "ProductID": 5269,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS053",
+    "Name": "Build It, Teach It, Learn It: Homegrown Mobile Apps for Teaching and Learning",
+    "ProductID": 5103,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS092",
+    "Name": "Learning Strategies: From Knowledge to Know-How",
+    "ProductID": 5149,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS112",
+    "Name": "Cup of Gold: Designing and Developing a Virtual Reality Learning Space",
+    "ProductID": 5251,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC31",
+    "Name": "Evidence of Impact ",
+    "ProductID": 5190,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC61",
+    "Name": "Wireless Local Area Networking",
+    "ProductID": 5137,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DSK11",
+    "Name": "Speaker Ready Room Open",
+    "ProductID": 5061,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC33",
+    "Name": "Social Media",
+    "ProductID": 5168,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM09F",
+    "Name": "SEM09F",
+    "ProductID": 2633,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS038",
+    "Name": "The Phenomenon of Trust within Higher Ed Consortia",
+    "ProductID": 5109,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS149",
+    "Name": "A Revised Lesson Plan for Student Success with Steelcase Education and Cal State LA",
+    "ProductID": 5044,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DSK10",
+    "Name": "Speaker Ready Room Open",
+    "ProductID": 5060,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM02F",
+    "Name": "SEM02F-Approaches to Unconscious Bias - WAITLIST",
+    "ProductID": 2605,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS09",
+    "Name": "The Evolving IT Service Organization ",
+    "ProductID": 5032,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC46",
+    "Name": "Product Management",
+    "ProductID": 5180,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG58",
+    "Name": "Research University CIO Conclave (RUCC) Meeting (Members only)",
+    "ProductID": 5086,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC06",
+    "Name": "Investment-Based Budgeting: Plan What You Want to \"Sell,\" Not Just What You Want to Spend",
+    "ProductID": 5094,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC58",
+    "Name": "DISC58-TBD",
+    "ProductID": 5171,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC64",
+    "Name": "Digital Signage in Higher Education",
+    "ProductID": 5197,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS06",
+    "Name": "Libraries and the Future of Higher Education",
+    "ProductID": 5035,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP15",
+    "Name": "Digital Credentials for Digital Learners",
+    "ProductID": 5223,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS02",
+    "Name": "Your Legacy: An Organization That Delivers Strategic Value, Again and Again",
+    "ProductID": 5027,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS032",
+    "Name": "Virtual Reality in the Classroom",
+    "ProductID": 4989,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS085",
+    "Name": "Building the Next Generation of University Infrastructure Services: Transitioning Enterprise Systems to a Cloud-First Approach",
+    "ProductID": 5112,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS074",
+    "Name": "Cloud Readiness: Preparing for Takeoff",
+    "ProductID": 5155,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP09",
+    "Name": "Measuring Learning Outcomes: Benefit or Burden?",
+    "ProductID": 5211,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC22",
+    "Name": "IT Support Services",
+    "ProductID": 5188,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM06A",
+    "Name": "SEM06A-Balanced Leadership: The Role of Behavior Styles and Emotional Intelligence - WAITLIST",
+    "ProductID": 2626,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WHLR",
+    "Name": "Hawkins Leadership Roundtable - WAITLIST",
+    "ProductID": 2607,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC04",
+    "Name": "Using the Cloud: When Is It Practical?",
+    "ProductID": 5089,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DSK12",
+    "Name": "Speaker Ready Room Open",
+    "ProductID": 5062,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS015",
+    "Name": "Humanized Analytics: Visualizing Student Progress with Data-Driven RoadMaps",
+    "ProductID": 5242,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC25",
+    "Name": "ITSM in Higher Education ",
+    "ProductID": 5189,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS137",
+    "Name": "Making Smart Decisions about Courseware",
+    "ProductID": 5023,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC27",
+    "Name": "Communications Infrastructure and Applications",
+    "ProductID": 5178,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM04A",
+    "Name": "SEM04A-The New Leadership Challenge",
+    "ProductID": 2588,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS040",
+    "Name": "Reimagining the Higher Education Ecosystem: The 2016 National Ed Tech Plan",
+    "ProductID": 5257,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS056",
+    "Name": "Quilting Collaboration: Piecing Together the Best Tools for File Sync and Share",
+    "ProductID": 5083,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC63",
+    "Name": "DISC63",
+    "ProductID": 5229,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC35",
+    "Name": "LGBTQIA in IT",
+    "ProductID": 5191,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS003",
+    "Name": "Accessible UX: Creating an Elegant and Accessible User Experience",
+    "ProductID": 5151,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS089",
+    "Name": "Why the Blockchain Will Revolutionize Credentials",
+    "ProductID": 4992,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP48",
+    "Name": "eBird: Global Tools for Birders, Critical Data for Science",
+    "ProductID": 5240,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM01P",
+    "Name": "SEM01P-Save Time and Resources: Using Disruptive Technologies in Higher Education - WAITLIST",
+    "ProductID": 2602,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS064",
+    "Name": "Using LSRS and FLEXspace to Measure Impact and Support Learning Space Master Planning",
+    "ProductID": 5143,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP04",
+    "Name": "A More Agile Institution: The Cloud, Smarter Buildings, Workday, and Outsourcing",
+    "ProductID": 5215,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS123",
+    "Name": "Institutional Programs for Student Success: The Next Wave, Part II",
+    "ProductID": 5020,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC44",
+    "Name": "Small Colleges",
+    "ProductID": 5202,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC47",
+    "Name": "Instructional Design ",
+    "ProductID": 5099,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS01",
+    "Name": "Transforming Learning at the Intersection of Cognitive Computing and Cognitive Neuroscience",
+    "ProductID": 5026,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "GS01",
+    "Name": "Quiet: How to Harness the Strengths of Introverts to Change How We Work, Lead, and Innovate",
+    "ProductID": 2661,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS061",
+    "Name": "Creating a Customer-Focused University",
+    "ProductID": 5158,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM05A",
+    "Name": "SEM05A-The Experience of Disability, Web Accessibility Standards, and Open-Source Evaluation Tools",
+    "ProductID": 2595,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM07P",
+    "Name": "SEM07P-User Experience Is for Everyone: Identify Users' Needs to Create Better Product and Service Experiences",
+    "ProductID": 2651,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM10P",
+    "Name": "SEM10P-Active Teaching and Learning Spaces: Design, Technology, Outcomes, and Support - WAITLIST",
+    "ProductID": 2654,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC65",
+    "Name": "DISC65-TBD",
+    "ProductID": 5186,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM03P",
+    "Name": "SEM03P-Preparing for That IT Strategic Planning Project: A Data-Driven Approach - WAITLIST",
+    "ProductID": 2614,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP11",
+    "Name": "Student Mobile Takeover: Announcing the Winners of the Great Mobile Appathon",
+    "ProductID": 5236,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS139",
+    "Name": "Building with LEGOs: Leveraging Open Standards for Learning Analytics Data",
+    "ProductID": 5272,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM05P",
+    "Name": "SEM05P-Cloud 101: Tools and Strategies for Evaluating Cloud Services",
+    "ProductID": 2615,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC59",
+    "Name": "SharePoint",
+    "ProductID": 5203,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS121",
+    "Name": "Boldly Moving to the Cloud on a Quest for Service Excellence",
+    "ProductID": 5077,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS091",
+    "Name": "Teaching Lab Skills via Open and Online Instructional Videos: Better Prepared Students and More Effective Teaching Time during Practicals",
+    "ProductID": 5056,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS10",
+    "Name": "FS10-TBD",
+    "ProductID": 5033,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM02P",
+    "Name": "SEM02P-Future Trends in Technology and Education: Building Foresight Capacity in Your Organization - WAITLIST",
+    "ProductID": 2642,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM01F",
+    "Name": "SEM01F-Building Successful IT Governance, Portfolio, and Project Management Processes - WAITLIST",
+    "ProductID": 2613,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP17",
+    "Name": "Create Virtual Learning Environments to Improve the Student Experience",
+    "ProductID": 5222,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM01A",
+    "Name": "SEM01A-Virtual Reality and the Future of Learning",
+    "ProductID": 2591,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM02F",
+    "Name": "SEM02F-Approaches to Unconscious Bias",
+    "ProductID": 2637,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS04",
+    "Name": "The EDUCAUSE 2017 Top 10 IT Issues",
+    "ProductID": 5029,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM05F",
+    "Name": "SEM05F-Becoming a Successful Technology Manager - WAITLIST",
+    "ProductID": 2650,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM03A",
+    "Name": "SEM03A-Negotiation Skills and Strategies for IT Leaders",
+    "ProductID": 2589,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "GS02",
+    "Name": "The Future of Learning",
+    "ProductID": 5038,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS116",
+    "Name": "SESS116-TBD",
+    "ProductID": 5017,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS077",
+    "Name": "Curation, Discovery, Adoption, and Research on Digital OER: An Innovative California Collaboration",
+    "ProductID": 5122,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM08F",
+    "Name": "SEM08F",
+    "ProductID": 2610,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM08A",
+    "Name": "SEM08A-Building Blocks for an Effective Information Security Strategy",
+    "ProductID": 2604,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG09",
+    "Name": "First-Timer's Welcome and Orientation",
+    "ProductID": 4984,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS117",
+    "Name": "What's Your Solution? Leveraging Peer Data to Inform Your Planning ",
+    "ProductID": 5118,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP41",
+    "Name": "Addressing the Retention Challenge: Rethinking Advising and Student Services",
+    "ProductID": 5271,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS088",
+    "Name": "IT Disaster Recovery and Business Continuity from the Inside Out",
+    "ProductID": 5204,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS129",
+    "Name": "Trends Spanning Education",
+    "ProductID": 5015,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP37",
+    "Name": "Machine Learning 101",
+    "ProductID": 5142,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC26",
+    "Name": "User Experience and Service Design Practice",
+    "ProductID": 5097,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM08P",
+    "Name": "SEM08P-Building Your Dream Team - WAITLIST",
+    "ProductID": 2656,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP06",
+    "Name": "Cybersecurity Challenge: Leveraging Security Best Practices to Secure Your Brand",
+    "ProductID": 5136,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS062",
+    "Name": "Developing Visual Literacy Strategies for Higher Education in the 21st Century",
+    "ProductID": 4990,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC32",
+    "Name": "Research Computing ",
+    "ProductID": 5179,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC56",
+    "Name": "Schools and Colleges of Engineering IT Leadership",
+    "ProductID": 5193,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DSK13",
+    "Name": "Speaker Ready Room Open",
+    "ProductID": 5063,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP16",
+    "Name": "Institutional IT: Scaling an Enterprise System Implementation",
+    "ProductID": 5131,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM07A",
+    "Name": "SEM07A-Developing a Roadmap for a Campus-Wide Office 365 SharePoint Implementation - WAITLIST",
+    "ProductID": 2646,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC03",
+    "Name": "Dealing with Complexity: Supporting Research in a Competitive World",
+    "ProductID": 5119,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS03",
+    "Name": "A Different Kind of CIO - Sponsored by Moran Technology Consulting, Gold Partner",
+    "ProductID": 5028,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS002",
+    "Name": "Changing the Conversation: The Faculty Voice in Tool Development, Deployment, and Evaluation",
+    "ProductID": 5095,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM11P",
+    "Name": "SEM11P",
+    "ProductID": 2629,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP46",
+    "Name": "Dropbox Education: Supercharging University Research",
+    "ProductID": 5134,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS113",
+    "Name": "Connected Credentials and Competencies: Bridging the Education-to-Employment Gap",
+    "ProductID": 5160,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM09A",
+    "Name": "SEM09A-Adaptive Learning Systems: Evaluating and Implementing the Right One (for You)",
+    "ProductID": 2641,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS028",
+    "Name": "Open Licensing with Creative Commons and The Open-Source Initiative",
+    "ProductID": 5243,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM01A",
+    "Name": "SEM01A-Virtual Reality and the Future of Learning - WAITLIST",
+    "ProductID": 2659,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS068",
+    "Name": "Practices and Experiences in Navigating the IT Pipeline as Women",
+    "ProductID": 5079,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM02P",
+    "Name": "SEM02P-Future Trends in Technology and Education: Building Foresight Capacity in Your Organization",
+    "ProductID": 2620,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP49",
+    "Name": "Cybersecurity: Microsoft Tools to Mitigate Sophisticated Cyberattacks",
+    "ProductID": 5128,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC18",
+    "Name": "The New Trust and Identity Approach: Community-Developed Identity and Access Management",
+    "ProductID": 5090,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS131",
+    "Name": "Envisioning Innovative Technology Spaces: Leadership Lessons - Sponsored by Moran Technology Consulting, Gold Partner",
+    "ProductID": 5256,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP29",
+    "Name": "On the Leading Edge of Higher Education Innovation",
+    "ProductID": 4997,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "BRK03",
+    "Name": "Seminar Lunch",
+    "ProductID": 4985,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS144",
+    "Name": "\"Under the Ed Radar\": An Edtech Business Pitch Competition - Sponsored by Penn State Edtech Network",
+    "ProductID": 5041,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS115",
+    "Name": "Data-Driven Frameworks for Optimizing IT’s Contribution to Higher Education",
+    "ProductID": 5117,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP18",
+    "Name": "Empowering and Simplifying Research Computing and Networking",
+    "ProductID": 5230,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS011",
+    "Name": "ACCelerator: ACCelerating Student Access and Success with the Ultrapersonalization of Learning",
+    "ProductID": 5047,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM05A",
+    "Name": "SEM05A-The Experience of Disability, Web Accessibility Standards, and Open-Source Evaluation Tools - WAITLIST",
+    "ProductID": 2608,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS063",
+    "Name": "Student Success in a Mobile Teaching and Learning Environment: Successes and Lessons",
+    "ProductID": 5267,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS019",
+    "Name": "Big Data for Research in the Campus Landscape",
+    "ProductID": 5076,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC23",
+    "Name": "The University of Texas System, Learners, and the Power of Blockchain",
+    "ProductID": 4987,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS142",
+    "Name": "Building with LEGOs: International Perspectives on Next-Generation Digital Learning Environments",
+    "ProductID": 5127,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "FS12",
+    "Name": "Diverse Paths to Leadership: Perspectives from CIOs",
+    "ProductID": 5037,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP10",
+    "Name": "All Together Now: How Harvard Unified Its Mobile Presence across Its Undergraduate and Graduate Schools",
+    "ProductID": 5140,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC02",
+    "Name": "Continue the Conversation with Satya Nitta",
+    "ProductID": 5199,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS134",
+    "Name": "Meeting Student Needs in Introductory Courses through Personalized Learning Technologies",
+    "ProductID": 5022,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "WSEM04F",
+    "Name": "SEM04F-ITANA Face2Face 2016 | Influence and Leadership Skills for Architects: Driving Strategic Decisions - WAITLIST",
+    "ProductID": 2636,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC07",
+    "Name": "Building a Customer-Focused Organization",
+    "ProductID": 5110,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS069",
+    "Name": "Crowdsourcing Cybersecurity through the REN-ISAC Community",
+    "ProductID": 5121,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM05F",
+    "Name": "SEM05F-Becoming a Successful Technology Manager",
+    "ProductID": 2632,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS103",
+    "Name": "Sustaining a Culture of Quality in Your Institution",
+    "ProductID": 5016,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "HLR",
+    "Name": "Hawkins Leadership Roundtable",
+    "ProductID": 2622,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM11A",
+    "Name": "SEM11A - Benchmarking Basics: From Data to Decisions to Results, and Back Again",
+    "ProductID": 2619,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS120",
+    "Name": "Institutional Programs for Student Success: The Next Wave, Part I",
+    "ProductID": 5019,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP05",
+    "Name": "The Evolving Role of Technology in Transforming the Student Experience in Higher Education",
+    "ProductID": 5220,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP20",
+    "Name": "Active Learning Spaces Transform Teaching and Learning",
+    "ProductID": 5167,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS075",
+    "Name": "Learning from Leading: New CIOs Discuss Their Roles and Experiences",
+    "ProductID": 5069,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP24",
+    "Name": "Only Blackboard: Innovation to Drive Student Success through the LMS and Beyond",
+    "ProductID": 5217,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DGOIFINT",
+    "Name": "Diana G. Oblinger Innovation Forum Workshop",
+    "ProductID": 2584,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC40",
+    "Name": "Community Colleges",
+    "ProductID": 5206,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "MTG42",
+    "Name": "Senior Directors Seminar Lunch - Sponsored by Workday, Platinum Partner",
+    "ProductID": 5283,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM02A",
+    "Name": "SEM02A-Moving to the Cloud with Amazon Web Services",
+    "ProductID": 2617,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC20",
+    "Name": "Women in IT",
+    "ProductID": 5141,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS127",
+    "Name": "Foil FUD: Using Data to Understand and Improve Information Security and Risk Management Practices",
+    "ProductID": 5125,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS102",
+    "Name": "Developing an IT Service Model for Supporting Higher Ed Research: A Conversation",
+    "ProductID": 5006,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS099",
+    "Name": "Defining and Implementing a Talent Management Strategy for IT's Changing Landscape",
+    "ProductID": 5104,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP32",
+    "Name": "Beyond E-Mail: Why You Need to Rethink Your Student Communication Strategy with Mobile",
+    "ProductID": 5228,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SEM10A",
+    "Name": "SEM10A-Understanding Your Customers' Experience: Journey Mapping and Data Collection",
+    "ProductID": 2638,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS014",
+    "Name": "Improving Learning and Teaching with Learning Analytics: What Do Teachers Want?",
+    "ProductID": 5253,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "DISC43",
+    "Name": "DISC43-TBD",
+    "ProductID": 5096,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "SESS023",
+    "Name": "Simplifying the Curation of Education Resources",
+    "ProductID": 4988,
+    "Traffic": 0
+  },
+  {
+    "AvgDwellTimeSS": 0,
+    "Code": "CORP36",
+    "Name": "Change Is Happening: A Panel on What's Next for ERPs",
+    "ProductID": 5232,
+    "Traffic": 0
+  }
+]
