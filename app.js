@@ -1,5 +1,30 @@
 var app = {};
 
+/**
+ * TEMPLATE HELPERS
+ */
+
+Handlebars.registerHelper('capacity_class', function() {
+
+  var fullness = this.traffic.Traffic / this.metadata.Capacity;
+
+  if (fullness <= .3) {
+    return 'bg-success';
+  }
+  else if (fullness < .6) {
+    return 'bg-info';
+  }
+  else if (fullness < .9) {
+    return 'bg-warning';
+  }
+
+  return 'bg-danger';
+});
+
+/**
+ * MODELS
+ */
+
 // Session metadata model
 app.Session = Backbone.Model.extend({
   defaults: {
@@ -17,8 +42,11 @@ app.Traffic = Backbone.Model.extend({
   }
 });
 
-// Collection for number of people at each session.
+/**
+ * COLLECTIONS
+ */
 
+// Collection for number of people at each session.
 app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
   url: '/testdata/traffic.json',
@@ -35,12 +63,15 @@ app.SessionList = Backbone.Collection.extend({
     // this.on("add change", this.updateMetadata);
   },
   model: app.Session,
-  url: '/testdata/sessions.json',
+  url: '/testdata/sessions16.json',
   parse: function(response,options) {
     return response;
   },
 });
 
+/**
+ * VIEWS
+ */
 
 // Renders the collection of sessions.
 var SessionView = Backbone.View.extend({
@@ -49,47 +80,63 @@ var SessionView = Backbone.View.extend({
   initialize: function(options) {
     this.traffic = options.traffic;
     this.metadata = options.metadata;
+    this.acceptedTypes = [
+      "Featured Session",
+      "Breakout Session",
+      "Meeting",
+      "Additional Fee Program",
+    ];
 
-    this.listenTo(this.traffic, "reset", this.render);
-    this.listenTo(this.metadata, "reset", this.render);
+    this.listenTo(this.traffic, "reset change", this.render);
+    this.listenTo(this.metadata, "reset change", this.render);
 
     this.metadata.fetch({reset:true});
     this.traffic.fetch({reset:true});
   },
 
   render: function() {
-    console.log(this.metadata);
-
     this.$el.html('');
-    this.traffic.each(function(model) {
-      var trafficData = model.toJSON();
 
-      var sessionData = {};
+    if (this.metadata.size() == 0) {
+      console.log('Metadata not loaded yet.')
+      this.$el.html('<h5 class="bg-info">Loading metadata...</h5>');
+      return;
+    }
+
+    if (this.traffic.size() == 0) {
+      console.log('No traffic results right now.');
+      this.$el.html('<h5 class="bg-info">No session traffic right now.</h5>');
+      return;
+    }
+
+    this.traffic.each(function(model) {
 
       try {
-        sessionData = this.metadata.get(model.get("Code")).toJSON();
-      } catch (e) {
-        // console.log(e); // TypeError
-        console.log("Failed code: " + model.get("Code"));
-      }
+        session = this.metadata.get(model.get("Code"));
 
-      var output = this.template({ traffic: trafficData, metadata: sessionData });
-      this.$el.append(output);
+        if (typeof session !== "undefined" && $.inArray(session.get("Type"), this.acceptedTypes) < 0 ) {
+          // console.log(session.get("Type"));
+          // console.log(this.acceptedTypes);
+          return;
+        }
+
+        try {
+          var output = this.template({ traffic:  model.toJSON(), metadata: session.toJSON() });
+          this.$el.append(output);
+        }
+        catch (e) {
+          // console.log("Render error");
+          // console.log(e);
+        }
+      } catch (e) {
+        // TypeError
+        console.log("Failed to load metadata for code: " + model.get("Code"));
+        console.log(e);
+      }
 
     }, this);
 
   },
-
-  //
-  // render: function() {
-  //   this.$el.html('');
-  //   this.collection.each(function(model){
-  //
-  //     var renderArray = model.toJSON();
-  //     var sessTemplate = this.template(renderArray);
-  //     this.$el.append(sessTemplate);
-  //   }, this);
-  // },
 
   //
   // initialize: function() {
