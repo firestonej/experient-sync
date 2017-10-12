@@ -146,8 +146,14 @@ var trafficList = new app.TrafficList();
 
 var sessionView = new SessionView({ traffic: trafficList, metadata: sessionMetadata });
 
-setInterval(function() {
-  trafficList.fetch();
-  sessionMetadata.fetch();
+var trafficPoll = Backbone.Poller.get(trafficList, {
+  delay: 1000
+});
 
-}, 1000);
+var metadataPoll = Backbone.Poller.get(sessionMetadata, {
+  delay: 5000,
+});
+
+
+trafficPoll.start();
+metadataPoll.start();
