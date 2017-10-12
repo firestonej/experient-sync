@@ -138,12 +138,6 @@ var SessionView = Backbone.View.extend({
 
   },
 
-  //
-  // initialize: function() {
-  //   this.listenTo(this.collection,"add change", function() {
-  //     this.render();
-  //   } );
-
 });
 
 var sessionMetadata = new app.SessionList();
