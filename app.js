@@ -55,6 +55,9 @@ app.TrafficList = Backbone.Collection.extend({
       return obj.Traffic > 0;
     });
   },
+  comparator: function(traffic) {
+    return -traffic.get("Traffic");
+  }
 });
 
 // Session metadata collection.
