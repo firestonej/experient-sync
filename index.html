@@ -15,7 +15,13 @@
 
     </head>
 
-    <div id="sessions" class="container">
+    <div id="main" class="container">
+
+        <h3 id="error"></h3>
+
+        <div id="sessions" class="container">
+
+        </div>
 
     </div>
 
@@ -25,7 +31,6 @@
             <h5>{{metadata.Title}}</h5>
             <div class="body">
                 {{traffic.Code}} - {{ traffic.Traffic }} / {{ metadata.Capacity }}
-                <strong>{{metadata.Type}}</strong>
             </div>
         </div>
     </script>

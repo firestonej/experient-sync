@@ -87,8 +87,9 @@ var SessionView = Backbone.View.extend({
       "Featured Session",
       "Breakout Session",
       "Meeting",
-      "Additional Fee Program",
+      "Additional Fee Program"
     ];
+    this.errorEl = $('#error');
 
     this.listenTo(this.traffic, "reset change", this.render);
     this.listenTo(this.metadata, "reset change", this.render);
@@ -102,15 +103,17 @@ var SessionView = Backbone.View.extend({
 
     if (this.metadata.size() == 0) {
       console.log('Metadata not loaded yet.')
-      this.$el.html('<h5 class="bg-info">Loading metadata...</h5>');
+      this.errorEl.html('Loading metadata...');
       return;
     }
 
     if (this.traffic.size() == 0) {
       console.log('No traffic results right now.');
-      this.$el.html('<h5 class="bg-info">No session traffic right now.</h5>');
+      this.errorEl.html('No session traffic right now.');
       return;
     }
+
+    this.errorEl.html('');
 
     this.traffic.each(function(model) {
 
@@ -154,7 +157,7 @@ var trafficPoll = Backbone.Poller.get(trafficList, {
 });
 
 var metadataPoll = Backbone.Poller.get(sessionMetadata, {
-  delay: 5000,
+  delay: 5000
 });
 
 
