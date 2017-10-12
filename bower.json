@@ -5,6 +5,24 @@
     "jquery": "latest",
     "backbone": "latest",
     "underscore": "latest",
-    "handlebars": "^4.0.10"
-  }
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.5",
+    "handlebars": "^4.0.10",
+    "backbone-poller": "^1.1.4"
+  },
+  "homepage": "https://github.com/firestonej/experient-sync",
+  "authors": [
+    "Jesse Firestone <jesse@freeflowdigital.com>"
+  ],
+  "description": "",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
