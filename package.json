@@ -4,6 +4,7 @@
   "description": "Educause node.js app",
   "main": "",
   "dependencies": {
+    "async-polling": "^0.2.1",
     "bootstrap-sass": "^3.3.7",
     "bower": "1.8.0",
     "grunt": "^1.0.1",
