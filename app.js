@@ -49,7 +49,7 @@ app.Traffic = Backbone.Model.extend({
 // Collection for number of people at each session.
 app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
-  url: '/testdata/traffic.json',
+  url: '/public/data/traffic.json',
   parse: function(response, options) {
     return _.filter(response, function (obj) {
       return obj.Traffic > 0;
@@ -66,7 +66,7 @@ app.SessionList = Backbone.Collection.extend({
     // this.on("add change", this.updateMetadata);
   },
   model: app.Session,
-  url: '/testdata/sessions16.json',
+  url: '/public/data/sessions16.json',
   parse: function(response,options) {
     return response;
   },

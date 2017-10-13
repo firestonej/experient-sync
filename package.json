@@ -1,8 +1,8 @@
 {
-  "name": "attempt1",
+  "name": "educause-rooms",
   "version": "1.0.0",
-  "description": "Instructions:",
-  "main": "app.js",
+  "description": "Educause node.js app",
+  "main": "index.js",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "grunt": "^1.0.1",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/firestonej/experient-sync.git"
   },
-  "author": "",
+  "author": "Jesse Firestone <jesse@freeflowdigital.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/firestonej/experient-sync/issues"
