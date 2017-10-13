@@ -66,7 +66,7 @@ app.SessionList = Backbone.Collection.extend({
     // this.on("add change", this.updateMetadata);
   },
   model: app.Session,
-  url: '/public/data/sessions16.json',
+  url: '/public/metadata/sessions16.json',
   parse: function(response,options) {
     return response;
   },
