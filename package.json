@@ -9,7 +9,8 @@
     "grunt": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "http-server": "^0.10.0"
+    "http-server": "^0.10.0",
+    "node-fetch": "^1.7.3"
   },
   "devDependencies": {},
   "scripts": {
