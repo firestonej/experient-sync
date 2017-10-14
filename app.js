@@ -69,7 +69,7 @@ app.SessionList = Backbone.Collection.extend({
   url: '/public/metadata/sessions16.json',
   parse: function(response,options) {
     return response;
-  },
+  }
 });
 
 /**
