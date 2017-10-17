@@ -28,10 +28,11 @@
 
     <!-- Templates -->
     <script id="session-template" type="text/x-handlebars-template">
-        <div class="session {{capacity_class}}">
-            <h5>{{metadata.Title}}</h5>
+        <div class="session {{Class}}">
+            <h5>{{Title}}</h5>
             <div class="body">
-                {{traffic.Code}} - {{ traffic.Traffic }} / {{ metadata.Capacity }}
+                {{MeetingRoom}} - {{FullnessPercentage}}% full
+
             </div>
         </div>
     </script>

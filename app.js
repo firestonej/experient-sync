@@ -4,23 +4,6 @@ var app = {};
  * TEMPLATE HELPERS
  */
 
-Handlebars.registerHelper('capacity_class', function() {
-
-  var fullness = this.traffic.Traffic / this.metadata.Capacity;
-
-  if (fullness <= .3) {
-    return 'bg-success';
-  }
-  else if (fullness < .6) {
-    return 'bg-info';
-  }
-  else if (fullness < .9) {
-    return 'bg-warning';
-  }
-
-  return 'bg-danger';
-});
-
 /**
  * MODELS
  */
