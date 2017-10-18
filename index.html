@@ -18,34 +18,56 @@
 
     </head>
 
+    <header class="container">
 
+        <img src="public/img/e17conferencelogov2.png" />
 
-    <div id="main" class="container">
+        <h1>Room Capacity</h1>
 
-        <h3 id="error"></h3>
+    </header>
 
-        <ul class="sorter container">
+    <main>
 
-            <li>Sort by:</li>
-            <li><button data-sort="FullnessPercentage" class="btn btn-default">Fullness</button></li>
-            <li><button data-sort="Title" class="btn btn-default">Title</button></li>
-            <li><button data-sort="Room" class="btn btn-default">Room</button></li>
+        <div id="sessions-wrap">
 
-        </ul>
+            <div class="sorter-wrap">
 
-        <div id="sessions" class="container">
+                <ul class="sorter container">
+
+                    <li class="hidden-xs"><label>Sort by:</label></li>
+                    <li><button data-sort="FullnessPercentage" class="btn">Fullness</button></li>
+                    <li><button data-sort="Title" class="btn active">Title</button></li>
+                    <li><button data-sort="Room" class="btn">Room</button></li>
+
+                </ul>
+
+            </div>
+
+            <div class="container">
+
+                <h3 id="error"></h3>
+
+            </div>
+
+            <div id="sessions" class="container">
+
+            </div>
 
         </div>
 
-    </div>
+    </main>
 
     <!-- Templates -->
     <script id="session-template" type="text/x-handlebars-template">
-        <div class="session {{Class}}">
-            <h5>{{Title}}</h5>
+        <div class="session {{Class}} f-{{FullnessPercentage}}">
             <div class="body">
-                {{Room}} - {{Fullness}}% full
+                <div class="fullness">{{Fullness}}</div>
+                <div class="title">{{Title}}</div>
+                <div class="room">{{Room}}</div>
 
+                <div class="debug">
+                    <h6>{{FullnessPercentage}}%</h6>
+                </div>
             </div>
         </div>
     </script>

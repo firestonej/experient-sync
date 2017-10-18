@@ -1,14 +1,178 @@
 @import "bootstrap";
 
-.sorter {
-  li {
+////
+// Variables
+////
+
+// Educause
+$red: #9f0830;
+$grey: #2e2e2e;
+$grey-med: #BFBBC2;
+$grey-lite: #f4f5f8;
+$blue: #005282;
+$blue-active: #3d73b2;
+
+// Room fullness
+$full: #FF5815;
+$filling: #E8A90C;
+$open: #278F15;
+
+////
+// Mixins
+////
+
+%full-bar {
+  content: '';
+  display: block;
+  width: 70%;
+  border-top: solid;
+}
+
+@mixin fullness {
+  @for $i from 1 through 100 {
+    .f-#{$i}:before {
+      width: $i * 1%;
+    }
+  }
+}
+
+@include fullness;
+
+////
+// Styles
+////
+
+body {
+  border-top: 3px solid $red;
+  color: $grey;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  img {
     float: left;
-    margin: 5px;
-    list-style: none;
+    margin: 0 40px 0 0;
+  }
+}
+
+.sorter-wrap {
+  background-color: $grey-lite;
+
+  .sorter {
+
+    li {
+      float: left;
+      font-family: 'Khula', sans-serif;
+      margin: 0 10px;
+      list-style: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      label {
+        padding: 16px 10px 12px;
+        font-weight: normal;
+      }
+
+      .btn {
+        background-color: $grey-lite;
+        border-radius: 0;
+        border: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background .15s linear 0s, border .15s linear 0s, color .18s linear 0s;
+        padding: 16px 10px 12px;
+
+        &:hover,
+        &:focus,
+        &.focus,
+        &.active {
+          background-color: #fff;
+          border-bottom: 3px solid $red;
+          color: $red;
+          text-decoration: none;
+
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+        }
+      }
+    }
   }
 }
 
 .session {
   font-family: 'Khula', sans-serif;
+  font-size: 1.2em;
+
+  background-color: $grey-med;
+  margin: 10px 0;
+
+  .body {
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid $grey-med;
+    border-top: none;
+  }
+
+  .fullness {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 3px;
+    font-family: 'Roboto';
+    font-size: .9em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 3px 0;
+  }
+
+  .room {
+    font-family: 'Roboto';
+  }
+
+  .debug {
+    display: none;
+  }
+
+  &:before {
+    @extend %full-bar;
+
+  }
+
+  &.full {
+    &:before {
+      border-color: $full;
+    }
+
+    .fullness {
+      background-color: $full;
+    }
+  }
+
+  &.open {
+    &:before {
+      border-color: $open;
+    }
+
+    .fullness {
+      background-color: $open;
+    }
+  }
+
+  &.filling-up {
+    & :before {
+      border-color: $filling;
+    }
+
+    .fullness {
+      background-color: $filling;
+    }
+  }
 }
 
