@@ -75,10 +75,8 @@ app.Traffic = Backbone.Model.extend({
 app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
   url: '/public/data/traffic.json',
-  parse: function(response, options) {
-    return _.filter(response, function (obj) {
-      return obj.Traffic > 0;
-    });
+  getActiveCount: function() {
+
   },
   comparator: function(traffic) {
     return -traffic.get("Traffic");
@@ -197,7 +195,6 @@ var SessionView = Backbone.View.extend({
     });
 
     this.activeSessions.reset(filtered);
-    // this.activeSessions.sort();
 
     this.render();
   },

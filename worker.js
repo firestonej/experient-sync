@@ -62,6 +62,7 @@ function grab(authString) {
     fetch(url, opts)
       .then(function(response) {
         if (response.status == 200) {
+          // @todo: File won't exist until dest.on('open', ...) event is fired
           var dest = fs.createWriteStream('public/data/traffic.json');
           response.body.pipe(dest);
           resolve();
