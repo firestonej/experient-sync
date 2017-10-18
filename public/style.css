@@ -3292,10 +3292,12 @@ input[type="button"].btn-block {
 @media print {
   .hidden-print {
     display: none !important; } }
-.mynew-class {
-  color: pink; }
+.sorter li {
+  float: left;
+  margin: 5px;
+  list-style: none; }
 
-.new-other-class {
-  font-size: 14px; }
+.session {
+  font-family: 'Khula', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

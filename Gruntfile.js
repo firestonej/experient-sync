@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     // the first path is the output and the second is the input
-                    'static/style.css': 'sass/style.scss'
+                    'public/style.css': 'sass/style.scss'
                 }
             },
             // this is the "production" Sass config used with the "grunt buildcss" command
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     loadPath: 'node_modules/bootstrap-sass/assets/stylesheets/'
                 },
                 files: {
-                    'static/style.css': 'sass/style.scss'
+                    'public/style.css': 'sass/style.scss'
                 }
             }
         },

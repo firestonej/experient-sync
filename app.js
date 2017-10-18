@@ -28,19 +28,12 @@ app.Session = Backbone.Model.extend({
       var ratio = (this.get('CurrentTraffic') * 1.4) / this.get('Capacity');
       var fullness = 'Full';
 
-      if (ratio <= .25) {
+      if (ratio <= .7) {
         fullness =  'Open';
       }
-      else if (ratio < .5) {
-        fullness =  'Medium';
+      else if (ratio < .9) {
+        fullness =  'Filling up';
       }
-      else if (ratio < .75) {
-        fullness =  'Busy';
-      }
-      else if (fullness < .95) {
-        fullness =  'Crowded'
-      }
-
       this.set('Class', fullness.toLowerCase());
       this.set('Fullness', fullness);
       this.set('FullnessPercentage', (ratio * 100).toFixed());
