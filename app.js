@@ -34,9 +34,11 @@ app.Session = Backbone.Model.extend({
       else if (ratio < .9) {
         fullness =  'Filling up';
       }
-      this.set('Class', fullness.toLowerCase());
+      this.set('Class', fullness.toLowerCase().trim()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/[\s_-]+/g, '-'));
       this.set('Fullness', fullness);
-      this.set('FullnessPercentage', (ratio * 100).toFixed());
+      this.set('FullnessPercentage', _.min([(ratio * 100).toFixed(),100]));
     }
     catch (e) {
       console.error(e);
@@ -95,10 +97,11 @@ app.SessionList = Backbone.Collection.extend({
       return model.get('Title').toLowerCase();
     }
     else if (this.sortField == 'FullnessPercentage') {
-      return model.get('FullnessPercentage');
+      // Frustrating user language vs dev language translation
+      return parseInt(model.get('FullnessPercentage'));
     }
     else if (this.sortField == 'Room') {
-      return model.get('MeetingRoom').toLowerCase();
+      return model.get('Room').toLowerCase();
     }
   },
   model: app.Session,
@@ -114,8 +117,9 @@ app.SessionList = Backbone.Collection.extend({
 
 // Renders the collection of sessions.
 var SessionView = Backbone.View.extend({
-  el: '#sessions',
+  el: '#sessions-wrap',
   template: Handlebars.compile($('#session-template').html()),
+
   initialize: function(options) {
     this.traffic = options.traffic;
     this.metadata = options.metadata;
@@ -125,7 +129,7 @@ var SessionView = Backbone.View.extend({
       "Meeting",
       "Additional Fee Program"
     ];
-    this.errorEl = $('#error');
+    this.errorEl = $("#error");
 
     this.activeSessions = new app.SessionList();
 
@@ -136,10 +140,21 @@ var SessionView = Backbone.View.extend({
     this.traffic.fetch({reset:true});
   },
 
-  joinSessions: function() {
+  events: {
+    "click .sorter li button": "changeSort",
+  },
 
+  changeSort: function(event) {
+    this.activeSessions.sortField = $(event.target).attr("data-sort");
+    this.activeSessions.sort();
+    $(event.target).addClass('active');
+    $('.sorter li button').not(event.target).removeClass('active');
+    this.render();
+  },
+
+  joinSessions: function() {
     if (this.metadata.size() == 0) {
-      console.log('Metadata not loaded yet.')
+      console.log('Metadata not loaded yet.');
       this.errorEl.html('Loading metadata...');
       return;
     }
@@ -161,7 +176,7 @@ var SessionView = Backbone.View.extend({
         }
 
         session.set({
-          'CurrentTraffic': model.get("Traffic"),
+          'CurrentTraffic': model.get("Traffic")
         });
 
         // Link backwards for .change events
@@ -190,19 +205,18 @@ var SessionView = Backbone.View.extend({
   render: function() {
 
     if (this.activeSessions.size() == 0) {
-      console.log('No traffic results right now.');
       this.errorEl.html('No session traffic right now.');
       return;
     }
 
-    this.$el.html('');
+    this.$("#sessions").html('');
     this.errorEl.html('');
 
     this.activeSessions.each(function(model) {
 
       try {
         var output = this.template(model.toJSON());
-        this.$el.append(output);
+        this.$("#sessions").append(output);
       }
       catch (e) {
         console.error(e);
