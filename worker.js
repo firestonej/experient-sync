@@ -57,25 +57,35 @@ function grab(authString) {
 
     console.log(url);
 
-    console.log('Attempting to fetch...');
+    console.log('Opening file for write..');
 
-    fetch(url, opts)
-      .then(function(response) {
-        if (response.status == 200) {
-          // @todo: File won't exist until dest.on('open', ...) event is fired
-          var dest = fs.createWriteStream('public/data/traffic.json');
-          response.body.pipe(dest);
-          resolve();
-        }
+    var dest = fs.createWriteStream(__dirname + '/public/data/traffic.json', {flags: 'w'});
 
-        else if (response.status == 400) {
-          // console.log(response.json());
-          console.log(response.statusText);
-          console.log('Authentication needed.');
-          reject();
-        }
+    dest.on('error', function(e) {
+      console.log(e);
+    });
 
-      });
+    dest.on('open', function(fd) {
+
+      console.log('Fetching traffic report ..');
+
+      fetch(url, opts)
+        .then(function(response) {
+          if (response.status == 200) {
+            response.body.pipe(dest);
+            resolve();
+          }
+
+          else if (response.status == 400) {
+            // console.log(response.json());
+            console.log(response.statusText);
+            console.log('Authentication needed.');
+            reject();
+          }
+
+        });
+    });
+
   });
 }
 
