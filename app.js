@@ -215,6 +215,11 @@ var SessionView = Backbone.View.extend({
 
     this.activeSessions.reset(filtered);
 
+    // Easy but high-overhead way to reverse sort
+    if (this.activeSessions.sortOrder == 'desc') {
+      this.activeSessions.set(this.activeSessions.models.reverse(), {sort: false});
+    }
+
     this.render();
   },
 
