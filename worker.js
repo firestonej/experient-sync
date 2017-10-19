@@ -2,6 +2,7 @@ var fetch = require('node-fetch');
 var fs = require('fs');
 var async = require('async-polling');
 var moment = require('moment');
+var static = require('node-static');
 
 // Constants
 var BASE_URL = 'https://api.experienteventbit.com/';
@@ -126,3 +127,13 @@ polling.on('error', function (error) {
 });
 
 polling.run();
+
+var fileServer = new static.Server('./public');
+
+require('http').createServer(function (request, response) {
+  request.addListener('end', function () {
+
+    response.setHeader("Access-Control-Allow-Origin", "http://localhost:5000");
+    fileServer.serve(request, response);
+  }).resume();
+}).listen(8080);
