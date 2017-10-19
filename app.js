@@ -71,10 +71,12 @@ app.Traffic = Backbone.Model.extend({
  * COLLECTIONS
  */
 
+var base = window.location.protocol + '//' + window.location.hostname;
+
 // Collection for number of people at each session.
 app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
-  url: 'http://localhost:8080/data/traffic.json',
+  url: base + ':8080/data/traffic.json',
   getActiveCount: function() {
 
   },

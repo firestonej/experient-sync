@@ -133,7 +133,7 @@ var fileServer = new static.Server('./public');
 require('http').createServer(function (request, response) {
   request.addListener('end', function () {
 
-    response.setHeader("Access-Control-Allow-Origin", "http://localhost:5000");
+    response.setHeader("Access-Control-Allow-Origin", "*");
     fileServer.serve(request, response);
   }).resume();
 }).listen(8080);
