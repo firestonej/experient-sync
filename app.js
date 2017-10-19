@@ -88,6 +88,7 @@ app.SessionList = Backbone.Collection.extend({
   initialize: function(models, options) {
     _.defaults(this, {
       'sortField': 'Title',
+      'sortOrder': 'asc',
     });
   },
   comparator: function(model) {
@@ -143,9 +144,25 @@ var SessionView = Backbone.View.extend({
   },
 
   changeSort: function(event) {
-    this.activeSessions.sortField = $(event.target).attr("data-sort");
+    newSort = $(event.target).attr("data-sort");
+    if (this.activeSessions.sortField == newSort) {
+      this.activeSessions.sortOrder =
+        this.activeSessions.sortOrder == 'asc' ? 'desc' : 'asc';
+    }
+    else {
+      this.activeSessions.sortField = newSort;
+    }
     this.activeSessions.sort();
+
+    // Easy but high-overhead way to reverse sort
+    if (this.activeSessions.sortOrder == 'desc') {
+      this.activeSessions.set(this.activeSessions.models.reverse(), {sort: false});
+    }
+
+    // UI cleanup
+    $('.sorter li button').not(event.target).removeClass('asc desc');
     $(event.target).addClass('active');
+    $(event.target).addClass(this.activeSessions.sortOrder);
     $('.sorter li button').not(event.target).removeClass('active');
     this.render();
   },
