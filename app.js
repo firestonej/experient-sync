@@ -71,12 +71,14 @@ app.Traffic = Backbone.Model.extend({
  * COLLECTIONS
  */
 
-var base = window.location.protocol + '//' + window.location.hostname;
+
+// var base = window.location.protocol + '//' + window.location.hostname;
+var base = 'http://educause-rooms-data.herokuapp.com';
 
 // Collection for number of people at each session.
 app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
-  url: base + ':8080/data/traffic.json',
+  url: base + '/traffic.json',
   getActiveCount: function() {
 
   },
