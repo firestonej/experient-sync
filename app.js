@@ -58,7 +58,7 @@ app.Traffic = Backbone.Model.extend({
       newAttr = this.changedAttributes();
 
       if (this.has('SessionModel')) {
-
+        console.log('Session ' + this.get("Code") + ' traffic: ' + this.get("SessionModel").get("CurrentTraffic") + ' -> ' + newAttr.Traffic);
         this.get("SessionModel").set("CurrentTraffic", newAttr.Traffic);
       }
 
@@ -174,13 +174,13 @@ var SessionView = Backbone.View.extend({
 
   joinSessions: function() {
     if (this.metadata.size() == 0) {
-      console.log('Metadata not loaded yet.');
-      this.errorEl.html('Loading metadata...');
+      console.log('Metadata not loaded yet...');
+      this.errorEl.html('Loading session information...');
       return;
     }
 
     if (this.traffic.size() == 0) {
-      console.log('No traffic data.');
+      console.log('No traffic data yet...');
       return;
     }
 
@@ -267,12 +267,16 @@ var metadataPoll = Backbone.Poller.get(sessionMetadata, {
   delay: 30000
 });
 
+trafficPoll.on('success fetch complete', function() {
+
+});
+
 trafficList.on('error', function(k){
   console.error(k);
 });
 
 
-trafficPoll.on('error', function(model){
+trafficPoll.on('error', function(model) {
   console.error('oops! something went wrong');
   console.log(model);
 });
