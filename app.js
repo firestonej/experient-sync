@@ -1,5 +1,9 @@
 var app = {};
 
+const TRAFFIC_POLL_INTERVAL = 2000;
+const METADATA_POLL_INTERVAL = 30000;
+const RESET_INTERVAL = 6000;
+
 /**
  * TEMPLATE HELPERS
  */
@@ -226,14 +230,14 @@ var SessionView = Backbone.View.extend({
     this.render();
   },
 
-  render: function() {
+  render: function () {
+    this.$("#sessions").html('');
 
     if (this.activeSessions.size() == 0) {
       this.errorEl.html('No session traffic right now.');
       return;
     }
 
-    this.$("#sessions").html('');
     this.errorEl.html('');
 
     this.activeSessions.each(function(model) {
@@ -252,35 +256,62 @@ var SessionView = Backbone.View.extend({
 
 });
 
+/**
+ * RUNTIME
+ */
+
 var sessionMetadata = new app.SessionList(null);
 
 var trafficList = new app.TrafficList();
 
-var sessionView = new SessionView({ traffic: trafficList, metadata: sessionMetadata });
+var sessionView = new SessionView({traffic: trafficList, metadata: sessionMetadata});
 
 var trafficPoll = Backbone.Poller.get(trafficList, {
-  delay: 5000,
+  delay: TRAFFIC_POLL_INTERVAL,
   continueOnError: true
 });
 
 var metadataPoll = Backbone.Poller.get(sessionMetadata, {
-  delay: 30000
+  delay: METADATA_POLL_INTERVAL
 });
 
-trafficPoll.on('success fetch complete', function() {
+var trafficCount = 1;
 
+trafficPoll.on('fetch', t => {
+  console.log('Round trip #' + trafficCount + ' complete.');
+
+  if (trafficCount == (RESET_INTERVAL / TRAFFIC_POLL_INTERVAL)) {
+    console.log('> App halted automatically.');
+    app.End();
+  }
+  else {
+    trafficCount++;
+  }
 });
 
-trafficList.on('error', function(k){
-  console.error(k);
+trafficPoll.on('error', traffic => {
+  console.error('Error loading new traffic data!');
+  console.log(traffic);
 });
 
+// Start everything
+app.Run = function () {
+  metadataPoll.start();
+  trafficPoll.start();
 
-trafficPoll.on('error', function(model) {
-  console.error('oops! something went wrong');
-  console.log(model);
-});
+  sessionMetadata.fetch({reset: true});
+  trafficList.fetch({reset: true});
+};
 
-metadataPoll.start();
-trafficPoll.start();
+// Stop everything; notify user
+app.End = function () {
+  trafficCount = 0;
+  trafficList.reset(null);
+  sessionMetadata.reset(null);
+  sessionView.render();
+  metadataPoll.stop();
+  trafficPoll.stop();
 
+};
+
+$(document).ready(app.Run());
