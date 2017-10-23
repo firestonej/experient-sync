@@ -34,4 +34,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('buildcss', ['sass:dist']);
+
+    grunt.registerTask('default', ['sass', 'watch']);
 };
