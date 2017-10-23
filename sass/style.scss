@@ -52,6 +52,7 @@ header {
   img {
     float: left;
     margin: 0 40px 0 0;
+    max-width: 100%;
   }
 }
 
@@ -176,3 +177,7 @@ header {
   }
 }
 
+
+.modal-content {
+  padding: 30px;
+}

@@ -1,8 +1,8 @@
 var app = {};
 
-const TRAFFIC_POLL_INTERVAL = 2000;
+const TRAFFIC_POLL_INTERVAL = 10000;
 const METADATA_POLL_INTERVAL = 30000;
-const RESET_INTERVAL = 6000;
+const RESET_INTERVAL = 180000; // 3 minutes
 
 /**
  * TEMPLATE HELPERS
@@ -275,8 +275,6 @@ var metadataPoll = Backbone.Poller.get(sessionMetadata, {
 var trafficCount = 1;
 
 trafficPoll.on('fetch', t => {
-  console.log('Round trip #' + trafficCount + ' complete.');
-
   if (trafficCount == (RESET_INTERVAL / TRAFFIC_POLL_INTERVAL)) {
     console.log('> App halted automatically.');
     app.End();
@@ -293,6 +291,8 @@ trafficPoll.on('error', traffic => {
 
 // Start everything
 app.Run = function () {
+  $('#halt-modal').modal('hide');
+
   metadataPoll.start();
   trafficPoll.start();
 
@@ -302,13 +302,15 @@ app.Run = function () {
 
 // Stop everything; notify user
 app.End = function () {
+  $('#halt-modal').modal();
   trafficCount = 0;
   trafficList.reset(null);
   sessionMetadata.reset(null);
   sessionView.render();
   metadataPoll.stop();
   trafficPoll.stop();
-
 };
 
 $(document).ready(app.Run());
+
+$('#halt-modal').on('click', app.Run);
