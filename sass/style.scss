@@ -85,6 +85,23 @@ header {
         transition: background .15s linear 0s, border .15s linear 0s, color .18s linear 0s;
         padding: 16px 10px 12px;
 
+        span {
+          @extend .glyphicon;
+          font-size: .8em;
+          font-weight: bold;
+          margin-left: 5px;
+          border-radius: 8px;
+        }
+
+        &.asc span {
+          @extend .glyphicon-menu-up;
+
+        }
+
+        &.desc span {
+          @extend .glyphicon-menu-down;
+        }
+
         &:hover,
         &:focus,
         &.focus,
@@ -167,7 +184,7 @@ header {
   }
 
   &.filling-up {
-    & :before {
+    &:before {
       border-color: $filling;
     }
 

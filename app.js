@@ -166,7 +166,7 @@ var SessionView = Backbone.View.extend({
     }
 
     // UI cleanup
-    $('.sorter li button').not(event.target).removeClass('asc desc');
+    $('.sorter li button').removeClass('asc desc');
     $(event.target).addClass('active');
     $(event.target).addClass(this.activeSessions.sortOrder);
     $('.sorter li button').not(event.target).removeClass('active');
