@@ -23,26 +23,26 @@ app.Session = Backbone.Model.extend({
     FullnessPercentage: 0
   },
   idAttribute: 'Code',
-  initialize: function() {
+  initialize: function () {
     this.on('change', this.setFullness);
   },
-  setFullness: function(changes) {
+  setFullness: function (changes) {
     try {
       // Peter's magical
       var ratio = (this.get('CurrentTraffic') * 1.4) / this.get('Capacity');
       var fullness = 'Full';
 
       if (ratio <= .7) {
-        fullness =  'Open';
+        fullness = 'Open';
       }
       else if (ratio < .9) {
-        fullness =  'Filling up';
+        fullness = 'Filling up';
       }
       this.set('Class', fullness.toLowerCase().trim()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/[\s_-]+/g, '-'));
+          .replace(/[^\w\s-]/g, '')
+          .replace(/[\s_-]+/g, '-'));
       this.set('Fullness', fullness);
-      this.set('FullnessPercentage', _.min([(ratio * 100).toFixed(),100]));
+      this.set('FullnessPercentage', _.min([(ratio * 100).toFixed(), 100]));
     }
     catch (e) {
       console.error(e);
@@ -57,7 +57,7 @@ app.Traffic = Backbone.Model.extend({
     Traffic: 0,
   },
   idAttribute: 'Code',
-  initialize: function() {
+  initialize: function () {
     this.on('change:Traffic', function (thing) {
       newAttr = this.changedAttributes();
 
@@ -76,30 +76,30 @@ app.Traffic = Backbone.Model.extend({
  */
 
 
-// var base = window.location.protocol + '//' + window.location.hostname;
 var base = 'http://educause-rooms-data.herokuapp.com';
+// var base = 'http://localhost:3000';
 
 // Collection for number of people at each session.
 app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
   url: base + '/traffic.json',
-  getActiveCount: function() {
+  getActiveCount: function () {
 
   },
-  comparator: function(traffic) {
+  comparator: function (traffic) {
     return -traffic.get("Traffic");
   }
 });
 
 // Session metadata collection.
 app.SessionList = Backbone.Collection.extend({
-  initialize: function(models, options) {
+  initialize: function (models, options) {
     _.defaults(this, {
       'sortField': 'Title',
       'sortOrder': 'asc',
     });
   },
-  comparator: function(model) {
+  comparator: function (model) {
     if (this.sortField == 'Title') {
       return model.get('Title').toLowerCase();
     }
@@ -113,7 +113,7 @@ app.SessionList = Backbone.Collection.extend({
   },
   model: app.Session,
   url: './public/metadata/sessions16.json',
-  parse: function(response,options) {
+  parse: function (response, options) {
     return response;
   }
 });
@@ -127,7 +127,7 @@ var SessionView = Backbone.View.extend({
   el: '#sessions-wrap',
   template: Handlebars.compile($('#session-template').html()),
 
-  initialize: function(options) {
+  initialize: function (options) {
     this.traffic = options.traffic;
     this.metadata = options.metadata;
     this.acceptedTypes = [
@@ -143,20 +143,17 @@ var SessionView = Backbone.View.extend({
     this.listenTo(this.traffic, "change", this.filterSessions);
     this.listenTo(this.traffic, "reset", this.joinSessions);
     this.listenTo(this.metadata, "reset", this.joinSessions);
-
-    this.metadata.fetch({reset:true});
-    this.traffic.fetch({reset:true});
   },
 
   events: {
     "click .sorter li button": "changeSort",
   },
 
-  changeSort: function(event) {
+  changeSort: function (event) {
     newSort = $(event.target).attr("data-sort");
     if (this.activeSessions.sortField == newSort) {
       this.activeSessions.sortOrder =
-        this.activeSessions.sortOrder == 'asc' ? 'desc' : 'asc';
+          this.activeSessions.sortOrder == 'asc' ? 'desc' : 'asc';
     }
     else {
       this.activeSessions.sortField = newSort;
@@ -176,7 +173,7 @@ var SessionView = Backbone.View.extend({
     this.render();
   },
 
-  joinSessions: function() {
+  joinSessions: function () {
     if (this.metadata.size() == 0) {
       console.log('Metadata not loaded yet...');
       this.errorEl.html('Loading session information...');
@@ -215,8 +212,8 @@ var SessionView = Backbone.View.extend({
     }, this);
   },
 
-  filterSessions: function() {
-    var filtered = this.metadata.filter(function(t) {
+  filterSessions: function () {
+    var filtered = this.metadata.filter(function (t) {
       return t.get('CurrentTraffic') > 0;
     });
 
@@ -240,7 +237,7 @@ var SessionView = Backbone.View.extend({
 
     this.errorEl.html('');
 
-    this.activeSessions.each(function(model) {
+    this.activeSessions.each(function (model) {
 
       try {
         var output = this.template(model.toJSON());
