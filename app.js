@@ -108,7 +108,7 @@ app.SessionList = Backbone.Collection.extend({
     }
   },
   model: app.Session,
-  url: '/public/metadata/sessions16.json',
+  url: './public/metadata/sessions16.json',
   parse: function(response,options) {
     return response;
   }
@@ -136,7 +136,8 @@ var SessionView = Backbone.View.extend({
 
     this.activeSessions = new app.SessionList();
 
-    this.listenTo(this.traffic, "reset change", this.filterSessions);
+    this.listenTo(this.traffic, "change", this.filterSessions);
+    this.listenTo(this.traffic, "reset", this.joinSessions);
     this.listenTo(this.metadata, "reset", this.joinSessions);
 
     this.metadata.fetch({reset:true});
@@ -202,9 +203,9 @@ var SessionView = Backbone.View.extend({
         model.set("SessionModel", session);
 
       } catch (e) {
-        // TypeError
-        // console.log("Failed to load metadata for code: " + model.get("Code"));
-        // console.log(e);
+        TypeError
+        console.log("Failed to load metadata for code: " + model.get("Code"));
+        console.log(e);
       }
 
     }, this);
