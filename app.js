@@ -1,8 +1,20 @@
 var app = {};
 
-const TRAFFIC_POLL_INTERVAL = 10000;
-const METADATA_POLL_INTERVAL = 30000;
+// App & data refresh times.
+const TRAFFIC_POLL_INTERVAL = 10000; // 10 sec
+const METADATA_POLL_INTERVAL = 30000; // 30 sec
 const RESET_INTERVAL = 180000; // 3 minutes
+
+// Types of session traffic to show.
+const TRACKED_TYPES = [
+  "Featured Session",
+  "Breakout Session",
+  "Meeting",
+  "Additional Fee Program"
+];
+
+// Ratio to bump traffic by, to account for users without beacons
+const TRAFFIC_BUMP_RATIO = 1.4;
 
 /**
  * TEMPLATE HELPERS
@@ -12,7 +24,8 @@ const RESET_INTERVAL = 180000; // 3 minutes
  * MODELS
  */
 
-// Session metadata model
+// Session metadata model.
+// Represents one session at the conference.
 app.Session = Backbone.Model.extend({
   defaults: {
     Code: '',
@@ -22,22 +35,30 @@ app.Session = Backbone.Model.extend({
     Fullness: '',
     FullnessPercentage: 0
   },
-  idAttribute: 'Code',
+
+  idAttribute: 'Code', // Joins to Traffic.get("Code")
   initialize: function () {
     this.on('change', this.setFullness);
   },
+
   setFullness: function (changes) {
     try {
-      // Peter's magical
-      var ratio = (this.get('CurrentTraffic') * 1.4) / this.get('Capacity');
-      var fullness = 'Full';
+      // Peter's magical "1.4" ratio
+      var ratio = (this.get('CurrentTraffic') * this.bumpRatio) / this.get('Capacity');
 
+      // Traffic annotation, based on email from James Berg, 10/18:
+      // 0-70%: Open
+      // 70-90%: Filling Up
+      // 90%+: Full
+      var fullness = 'Full';
       if (ratio <= .7) {
         fullness = 'Open';
       }
       else if (ratio < .9) {
         fullness = 'Filling up';
       }
+
+      // Set model attrs for front-end.
       this.set('Class', fullness.toLowerCase().trim()
           .replace(/[^\w\s-]/g, '')
           .replace(/[\s_-]+/g, '-'));
@@ -48,25 +69,29 @@ app.Session = Backbone.Model.extend({
       console.error(e);
     }
   },
+
+  bumpRatio: TRAFFIC_BUMP_RATIO
 });
 
+// Beacon traffic model.
+// Represents the current traffic at one beacon.
 app.Traffic = Backbone.Model.extend({
   defaults: {
     Code: '',
     Name: '',
     Traffic: 0,
   },
-  idAttribute: 'Code',
+
+  idAttribute: 'Code', // Joins to Session.get("Code")
+
   initialize: function () {
     this.on('change:Traffic', function (thing) {
-      newAttr = this.changedAttributes();
-
+      // Send current traffic to this session's model.
       if (this.has('SessionModel')) {
+        newAttr = this.changedAttributes();
         console.log('Session ' + this.get("Code") + ' traffic: ' + this.get("SessionModel").get("CurrentTraffic") + ' -> ' + newAttr.Traffic);
         this.get("SessionModel").set("CurrentTraffic", newAttr.Traffic);
       }
-
-
     });
   }
 });
@@ -75,17 +100,14 @@ app.Traffic = Backbone.Model.extend({
  * COLLECTIONS
  */
 
-
 var base = 'http://educause-rooms-data.herokuapp.com';
-// var base = 'http://localhost:3000';
 
-// Collection for number of people at each session.
+// Collection for beacon traffic data.
 app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
-  url: base + '/traffic.json',
-  getActiveCount: function () {
 
-  },
+  url: base + '/traffic.json',
+
   comparator: function (traffic) {
     return -traffic.get("Traffic");
   }
@@ -93,12 +115,15 @@ app.TrafficList = Backbone.Collection.extend({
 
 // Session metadata collection.
 app.SessionList = Backbone.Collection.extend({
+  model: app.Session,
+
   initialize: function (models, options) {
     _.defaults(this, {
       'sortField': 'Title',
       'sortOrder': 'asc',
     });
   },
+
   comparator: function (model) {
     if (this.sortField == 'Title') {
       return model.get('Title').toLowerCase();
@@ -111,8 +136,9 @@ app.SessionList = Backbone.Collection.extend({
       return model.get('Room').toLowerCase();
     }
   },
-  model: app.Session,
+
   url: './public/metadata/sessions16.json',
+
   parse: function (response, options) {
     return response;
   }
@@ -125,17 +151,16 @@ app.SessionList = Backbone.Collection.extend({
 // Renders the collection of sessions.
 var SessionView = Backbone.View.extend({
   el: '#sessions-wrap',
+
   template: Handlebars.compile($('#session-template').html()),
+
+  // Tracked session types.
+  acceptedTypes: TRACKED_TYPES,
 
   initialize: function (options) {
     this.traffic = options.traffic;
     this.metadata = options.metadata;
-    this.acceptedTypes = [
-      "Featured Session",
-      "Breakout Session",
-      "Meeting",
-      "Additional Fee Program"
-    ];
+
     this.errorEl = $("#error");
 
     this.activeSessions = new app.SessionList();
@@ -149,6 +174,7 @@ var SessionView = Backbone.View.extend({
     "click .sorter li button": "changeSort",
   },
 
+  // Handles sorting events.
   changeSort: function (event) {
     newSort = $(event.target).attr("data-sort");
     if (this.activeSessions.sortField == newSort) {
@@ -160,7 +186,7 @@ var SessionView = Backbone.View.extend({
     }
     this.activeSessions.sort();
 
-    // Easy but high-overhead way to reverse sort
+    // Reverse sort.
     if (this.activeSessions.sortOrder == 'desc') {
       this.activeSessions.set(this.activeSessions.models.reverse(), {sort: false});
     }
@@ -173,6 +199,11 @@ var SessionView = Backbone.View.extend({
     this.render();
   },
 
+  // Joins session metadata (from NetFORUM) to beacon data from the
+  // Experient eventBit API.
+  // The join is performed whenever metadata is reset. Relationships
+  // are maintained in individual Session models so that the 'change'
+  // Backbone event can manage traffic changes internally.
   joinSessions: function () {
     if (this.metadata.size() == 0) {
       console.log('Metadata not loaded yet...');
@@ -180,6 +211,7 @@ var SessionView = Backbone.View.extend({
       return;
     }
 
+    // Either traffic.json on worker is empty, or there was a problem loading it.
     if (this.traffic.size() == 0) {
       console.log('No traffic data yet...');
       return;
@@ -190,9 +222,8 @@ var SessionView = Backbone.View.extend({
       try {
         session = this.metadata.get(model.get("Code"));
 
+        // Exclude traffic data from untracked types.
         if (typeof session == "undefined" || $.inArray(session.get("Type"), this.acceptedTypes) < 0) {
-          // console.log(session.get("Type"));
-          // console.log(this.acceptedTypes);
           return;
         }
 
@@ -200,11 +231,10 @@ var SessionView = Backbone.View.extend({
           'CurrentTraffic': model.get("Traffic")
         });
 
-        // Link backwards for .change events
+        // Link backwards for 'change' events
         model.set("SessionModel", session);
 
       } catch (e) {
-        TypeError
         console.log("Failed to load metadata for code: " + model.get("Code"));
         console.log(e);
       }
@@ -212,6 +242,7 @@ var SessionView = Backbone.View.extend({
     }, this);
   },
 
+  // Exclude empty sessions and kick to render.
   filterSessions: function () {
     var filtered = this.metadata.filter(function (t) {
       return t.get('CurrentTraffic') > 0;
@@ -227,6 +258,7 @@ var SessionView = Backbone.View.extend({
     this.render();
   },
 
+  // Render session list.
   render: function () {
     this.$("#sessions").html('');
 
@@ -257,12 +289,12 @@ var SessionView = Backbone.View.extend({
  * RUNTIME
  */
 
+// Instantiate everything.
 var sessionMetadata = new app.SessionList(null);
-
 var trafficList = new app.TrafficList();
-
 var sessionView = new SessionView({traffic: trafficList, metadata: sessionMetadata});
 
+// Prepare async polls.
 var trafficPoll = Backbone.Poller.get(trafficList, {
   delay: TRAFFIC_POLL_INTERVAL,
   continueOnError: true
@@ -272,6 +304,7 @@ var metadataPoll = Backbone.Poller.get(sessionMetadata, {
   delay: METADATA_POLL_INTERVAL
 });
 
+// Set up timeout loop.
 var trafficCount = 1;
 
 trafficPoll.on('fetch', t => {
@@ -289,7 +322,7 @@ trafficPoll.on('error', traffic => {
   console.log(traffic);
 });
 
-// Start everything
+// Reset collections and restart the app.
 app.Run = function () {
   $('#halt-modal').modal('hide');
 
@@ -298,9 +331,11 @@ app.Run = function () {
 
   sessionMetadata.fetch({reset: true});
   trafficList.fetch({reset: true});
+
+  sessionView.render();
 };
 
-// Stop everything; notify user
+// Stop everything; notify user.
 app.End = function () {
   $('#halt-modal').modal();
   trafficCount = 0;
@@ -311,6 +346,8 @@ app.End = function () {
   trafficPoll.stop();
 };
 
-$(document).ready(app.Run());
+// Run everything.
+$(document).ready(app.Run);
 
+// Allow user to restart after timeout.
 $('#halt-modal').on('click', app.Run);
