@@ -154,6 +154,8 @@ var SessionView = Backbone.View.extend({
 
   template: Handlebars.compile($('#session-template').html()),
 
+  loading: true,
+
   // Tracked session types.
   acceptedTypes: TRACKED_TYPES,
 
@@ -263,7 +265,13 @@ var SessionView = Backbone.View.extend({
     this.$("#sessions").html('');
 
     if (this.activeSessions.size() == 0) {
-      this.errorEl.html('There is no session room traffic right now.');
+      if (this.loading) {
+        this.errorEl.html('Loading traffic data...');
+        this.loading = false;
+      }
+      else {
+        this.errorEl.html('There is no session room traffic right now.');
+      }
       return;
     }
 
