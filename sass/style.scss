@@ -26,6 +26,7 @@ $open: #278F15;
   display: block;
   width: 70%;
   border-top: solid;
+  border-top-width: 5px;
 }
 
 @mixin fullness {
@@ -137,7 +138,7 @@ header {
   .fullness {
     display: inline-block;
     border-radius: 3px;
-    padding: 3px;
+    padding: 3px 5px 1px;
     font-family: 'Roboto';
     font-size: .9em;
     text-transform: uppercase;
@@ -147,7 +148,7 @@ header {
   .title {
     font-size: 1.1em;
     font-weight: bold;
-    margin: 3px 0;
+    margin: 8px 0 0;
   }
 
   .room {
