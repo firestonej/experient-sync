@@ -41,7 +41,7 @@ app.Session = Backbone.Model.extend({
     this.on('change', this.setFullness);
   },
 
-  setFullness: function (changes) {
+  setFullness: function () {
     try {
       // Peter's magical "1.4" ratio
       var ratio = (this.get('CurrentTraffic') * this.bumpRatio) / this.get('Capacity');
@@ -79,16 +79,16 @@ app.Traffic = Backbone.Model.extend({
   defaults: {
     Code: '',
     Name: '',
-    Traffic: 0,
+    Traffic: 0
   },
 
   idAttribute: 'Code', // Joins to Session.get("Code")
 
   initialize: function () {
-    this.on('change:Traffic', function (thing) {
+    this.on('change:Traffic', function () {
       // Send current traffic to this session's model.
       if (this.has('SessionModel')) {
-        newAttr = this.changedAttributes();
+        var newAttr = this.changedAttributes();
         console.log('Session ' + this.get("Code") + ' traffic: ' + this.get("SessionModel").get("CurrentTraffic") + ' -> ' + newAttr.Traffic);
         this.get("SessionModel").set("CurrentTraffic", newAttr.Traffic);
       }
@@ -107,20 +107,16 @@ app.TrafficList = Backbone.Collection.extend({
   model: app.Traffic,
 
   url: base + '/traffic.json',
-
-  comparator: function (traffic) {
-    return -traffic.get("Traffic");
-  }
 });
 
 // Session metadata collection.
 app.SessionList = Backbone.Collection.extend({
   model: app.Session,
 
-  initialize: function (models, options) {
+  initialize: function () {
     _.defaults(this, {
       'sortField': 'Title',
-      'sortOrder': 'asc',
+      'sortOrder': 'asc'
     });
   },
 
@@ -137,11 +133,7 @@ app.SessionList = Backbone.Collection.extend({
     }
   },
 
-  url: './public/metadata/sessions16.json',
-
-  parse: function (response, options) {
-    return response;
-  }
+  url: './public/metadata/sessions16.json'
 });
 
 /**
@@ -173,12 +165,12 @@ var SessionView = Backbone.View.extend({
   },
 
   events: {
-    "click .sorter li button": "changeSort",
+    "click .sorter li button": "changeSort"
   },
 
   // Handles sorting events.
   changeSort: function (event) {
-    newSort = $(event.target).attr("data-sort");
+    var newSort = $(event.target).attr("data-sort");
     if (this.activeSessions.sortField == newSort) {
       this.activeSessions.sortOrder =
           this.activeSessions.sortOrder == 'asc' ? 'desc' : 'asc';
@@ -194,10 +186,8 @@ var SessionView = Backbone.View.extend({
     }
 
     // UI cleanup
-    $('.sorter li button').removeClass('asc desc');
-    $(event.target).addClass('active');
-    $(event.target).addClass(this.activeSessions.sortOrder);
-    $('.sorter li button').not(event.target).removeClass('active');
+    $('.sorter li button').removeClass('asc desc active');
+    $(event.target).addClass('active ' + this.activeSessions.sortOrder);
     this.render();
   },
 
@@ -289,7 +279,7 @@ var SessionView = Backbone.View.extend({
 
     }, this);
 
-  },
+  }
 
 });
 
@@ -315,7 +305,7 @@ var metadataPoll = Backbone.Poller.get(sessionMetadata, {
 // Set up timeout loop.
 var trafficCount = 1;
 
-trafficPoll.on('fetch', t => {
+trafficPoll.on('fetch', function() {
   if (trafficCount == (RESET_INTERVAL / TRAFFIC_POLL_INTERVAL)) {
     console.log('> App halted automatically.');
     app.End();
@@ -325,7 +315,7 @@ trafficPoll.on('fetch', t => {
   }
 });
 
-trafficPoll.on('error', traffic => {
+trafficPoll.on('error', function (traffic) {
   console.error('Error loading new traffic data!');
   console.log(traffic);
 });
