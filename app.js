@@ -1,9 +1,9 @@
 var app = {};
 
 // App & data refresh times.
-const TRAFFIC_POLL_INTERVAL = 10000; // 10 sec
-const METADATA_POLL_INTERVAL = 30000; // 30 sec
-const RESET_INTERVAL = 180000; // 3 minutes
+const TRAFFIC_POLL_INTERVAL = 30000; // 30 sec
+const METADATA_POLL_INTERVAL = 150000; // 2.5 minutes
+const RESET_INTERVAL = 300000; // 5 minutes
 
 // Types of session traffic to show.
 const TRACKED_TYPES = [
