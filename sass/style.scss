@@ -13,7 +13,7 @@ $blue: #005282;
 $blue-active: #3d73b2;
 
 // Room fullness
-$full: #FF5815;
+$full: #D92B1D;
 $filling: #E8A90C;
 $open: #278F15;
 
@@ -197,4 +197,27 @@ header {
 
 .modal-content {
   padding: 30px;
+}
+
+header {
+  h1, h5 {
+    text-align: center;
+  }
+}
+
+h5 span {
+  font-weight: bold;
+
+  &.full {
+    color: $full;
+  }
+
+  &.open {
+    color: $open;
+
+  }
+
+  &.filling-up {
+    color: $filling;
+  }
 }

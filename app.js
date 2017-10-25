@@ -263,7 +263,7 @@ var SessionView = Backbone.View.extend({
     this.$("#sessions").html('');
 
     if (this.activeSessions.size() == 0) {
-      this.errorEl.html('No session traffic right now.');
+      this.errorEl.html('There is no session room traffic right now.');
       return;
     }
 

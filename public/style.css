@@ -3836,4 +3836,16 @@ header img {
 .modal-content {
   padding: 30px; }
 
+header h1, header h5 {
+  text-align: center; }
+
+h5 span {
+  font-weight: bold; }
+  h5 span.full {
+    color: #D92B1D; }
+  h5 span.open {
+    color: #278F15; }
+  h5 span.filling-up {
+    color: #E8A90C; }
+
 /*# sourceMappingURL=style.css.map */
