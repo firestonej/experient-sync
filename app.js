@@ -133,7 +133,7 @@ app.SessionList = Backbone.Collection.extend({
     }
   },
 
-  url: './public/metadata/sessions17.json'
+  url: './public/metadata/sessions17-10-28.json'
 });
 
 /**
